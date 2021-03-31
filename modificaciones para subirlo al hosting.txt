@@ -1,0 +1,6 @@
+Cambiar la base de datos
+.env
+.htcacess
+/app/Config/App.php
+/public/assets/js/main.js
+/app/Entities/Payments.php
