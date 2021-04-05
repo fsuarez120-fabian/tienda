@@ -4,8 +4,8 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-
-var base_url = "https://www.tienda.peradk.com";
+var getUrl = window.location;
+var base_url = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
 !(function ($) {
   "use strict";

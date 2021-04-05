@@ -1,0 +1,78 @@
+[class*="sidebar-dark-"] {
+  background-color: #343434;
+  background: linear-gradient(rgba(48, 48, 48, 0.788), rgba(49, 49, 49, 0.822)),
+    url(../../../../public/pictures/peradk/pera.png) fixed center center;
+}
+
+.list-group-item.active {
+  background-color: #76b119;
+  border-color: #76b119;
+}
+
+.btn-primary {
+  background-color: #76b119;
+  border-color: #76b119;
+}
+.backgroudlogin {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(114, 114, 114, 0.9),
+      rgba(112, 112, 112, 0.9)
+    ),
+    url(../../../../public/pictures/peradk/pera.png) fixed center center;
+}
+
+.backgroudlogin h3, label {
+  font-family: "Patrick Hand", cursive;
+  color: #ffffff;
+}
+label{
+  color: #000000;
+}
+.backgroudlogin p {
+  font-family: "Patrick Hand", cursive;
+  color: rgb(252, 65, 65);
+}
+
+.caja-login {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 300px;
+  padding: 15px;
+  box-shadow: 0 0 3px rgb(0 0 0 / 70%);
+  border-radius: 0 0 2px 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.list-group-item {
+  padding: 0.4rem 0.9rem;
+}
+
+.prodimg {
+  width: 80px;
+  border-radius: 40%;
+}
+
+.action-product {
+  font-size: 30px;
+  
+  padding: 5px;
+}
+
+.icon-red{
+  color: #ff1e00;
+}
+
+.icon-green{
+  color: #76b119;
+}
+
+.alert-success {
+  color: #fff;
+  background-color: #76b119;
+  border-color: #76b119;
+}
+
