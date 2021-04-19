@@ -98,12 +98,21 @@ $routes->post('adminpage/login', 'Admin/Home::checklogin', ['as' => 'admin_page_
 $routes->group('/adminpage', ['namespace' => 'App\Controllers\Admin' , 'filter' => 'auth'], function ($routes) {
 	$routes->add('totalpedidos', 'Order::show_order', ['as' => 'admin_page_orders']);
 	$routes->add('pedidos', 'Order::showOrderWithStateFinal', ['as' => 'admin_page_orders_with_state_final']); 
-	$routes->add('', 'Product::products', ['as' => 'admin_page_products']); 
+	$routes->add('', 'Home::index', ['as' => 'admin_page_home']); 
+	$routes->add('productos', 'Product::products', ['as' => 'admin_page_products']); 
 	$routes->add('logout', 'Home::logout', ['as' => 'admin_page_logout']);
 	$routes->post('saveproducto', 'Product::createProduct', ['as' => 'admin_page_save_product']);
 	$routes->post('update', 'Product::updateItemProducts', ['as' => 'admin_page_update_item_products']);
-	
+
+	//routes for cart for advisers
+	$routes->get('linkcartshopping', 'Cartforadvisers::viewCreateLink', ['as' => 'admin_page_view_create_link']); 
+	$routes->get('createlink', 'Cartforadvisers::createLink', ['as' => 'admin_page_create_link']); 
+	$routes->get('listlink', 'Cartforadvisers::viewListLinks', ['as' => 'admin_page_view_list_link']); 
 });
+
+//routes for cart for advisers
+$routes->get('/carrito/(:segment)', 'Cartforadvisers::cartReference/$1', ['as' => 'cart_advisers']);
+$routes->post('/carrito/save', 'Cartforadvisers::saveShippingInformation', ['as' => 'save_shipping_information_cart_advisers']);
 
 /**
  * --------------------------------------------------------------------

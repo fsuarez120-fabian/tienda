@@ -45,5 +45,15 @@ class OrderdetailsModel extends Model
             ->where('orderdetails.order_reference_order', $reference)
             ->get()->getResultArray();
     }
+
+    public function getItemWithCategoryAndProduct($reference)
+    {
+        return $this->db->table('orderdetails')
+            ->select('*')
+            ->join('category', 'orderdetails.product_category_idcategory = category.idcategory')
+            ->join('product', '(orderdetails.product_reference = product.reference AND orderdetails.product_category_idcategory=product.category_idcategory)')
+            ->where('orderdetails.order_reference_order', $reference)
+            ->get()->getResultArray();
+    }
   
 }

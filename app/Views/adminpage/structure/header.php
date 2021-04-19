@@ -13,6 +13,9 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>/public/assets/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/assets/dist/css/adminpage.css">
+    <link href="<?= base_url() ?>/public/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+   
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">

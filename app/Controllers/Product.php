@@ -789,7 +789,7 @@ class Product extends BaseController
 	}
 
 
-	public function calculatefreight($citydestination)
+	public function calculatefreight($citydestination)//OJO TENER EN CUENTA QUE ESTE METODO ESTA EN EL CONTROLADOR DE ADMIN/CARTFORADVISERS DEBEN SER IGUALES
 	{
 		$ORIGIN_CITY = 442;
 		$modelServientrega = new ServientregaModel();

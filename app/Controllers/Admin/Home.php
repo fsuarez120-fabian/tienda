@@ -11,17 +11,24 @@ use App\Models\OrderModel;
 
 class Home extends BaseController
 {
+    public function index()
+    {
+        return view('adminpage/structure/header')
+            . view('adminpage/structure/navbar')
+            . view('adminpage/structure/sidebar')
+            . view('adminpage/contents/home')
+            . view('adminpage/structure/footer');
+    }
 
     public function login()
     {
-        if(session()->is_logged){
-            return redirect()->route('admin_page_products');
-        }else{
+        if (session()->is_logged) {
+            return redirect()->route('admin_page_home');
+        } else {
             return view('adminpage/structure/header')
-            . view('adminpage/contents/login')
-            . view('adminpage/structure/footer');
+                . view('adminpage/contents/login')
+                . view('adminpage/structure/footer');
         }
-        
     }
 
     public function checklogin()
@@ -62,7 +69,7 @@ class Home extends BaseController
             'admin_image' =>  $user['image_admin']
         ]);
 
-        return redirect()->route('admin_page_products');
+        return redirect()->route('admin_page_home');
     }
 
 
@@ -71,9 +78,4 @@ class Home extends BaseController
         session()->destroy();
         return redirect()->route('admin_page_login');
     }
-
-
-
-
-    
 }

@@ -13,6 +13,7 @@
   background-color: #76b119;
   border-color: #76b119;
 }
+
 .backgroudlogin {
   height: 100vh;
   background: linear-gradient(
@@ -26,9 +27,11 @@
   font-family: "Patrick Hand", cursive;
   color: #ffffff;
 }
+
 label{
   color: #000000;
 }
+
 .backgroudlogin p {
   font-family: "Patrick Hand", cursive;
   color: rgb(252, 65, 65);
@@ -76,3 +79,95 @@ label{
   border-color: #76b119;
 }
 
+.section-title h2 {
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #76b119;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 130px;
+  border-radius: 20%;
+}
+
+.team .member p {
+  margin: 0px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #76b119;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.team .info {
+  border-top: 3px solid #76b119;
+  border-bottom: 3px solid #76b119;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+}
+
+.team .delete button[type="submit"] {
+  background: #ffffff00;
+  border: 0;
+  padding: 0px 0px;
+  color: rgb(3, 3, 3);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+button[type="submit"] {
+  background: #76b119;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+a {
+  color: #76b119;
+}
+a:hover {
+  color: #06b300;
+}

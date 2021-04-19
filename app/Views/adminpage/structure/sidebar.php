@@ -11,10 +11,10 @@
         <!-- Sidebar user (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?= base_url(route_to('images_employees')).'/'.session()->admin_image ?>" class="img-circle elevation-2" alt="User Image">
+                <img src="<?= base_url(route_to('images_employees')) . '/' . session()->admin_image ?>" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block"><?= session()->admin_name.' '.session()->admin_surname ?></a>
+                <a href="#" class="d-block"><?= session()->admin_name . ' ' . session()->admin_surname ?></a>
             </div>
         </div>
 
@@ -33,6 +33,15 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="<?= base_url(route_to('admin_page_home')) ?>" class="nav-link">
+                        <i class="fas fa-home nav-icon"></i>
+                        <p>
+                            Inicio
+                        </p>
+                    </a>
+                </li>
+
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <!--<li class="nav-item">
@@ -69,11 +78,11 @@
                         </p>
                     </a>
                 </li>
-                
+
                 <li class="nav-header">PRODUCTOS</li>
                 <li class="nav-item">
                     <a href="<?= base_url(route_to('admin_page_products')) ?>" class="nav-link">
-                        
+
                         <i class="fas fa-pen nav-icon"></i>
                         <p>
                             Agregar Producto
@@ -82,10 +91,29 @@
                 </li>
 
 
-                
-                
-                
-              
+                <li class="nav-header">LINKS CARRITO DE COMPRAS</li>
+                <li class="nav-item">
+                    <a href="<?= base_url(route_to('admin_page_view_create_link')) ?>" class="nav-link">
+                        <i class="fas fa-pen nav-icon"></i>
+                        <p>
+                            Crear link
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url(route_to('admin_page_view_list_link')) ?>" class="nav-link">
+                        <i class="fas fa-list nav-icon"></i>
+                        <p>
+                            Listado de links 
+                        </p>
+                    </a>
+                </li>
+
+
+
+
+
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
