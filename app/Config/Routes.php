@@ -108,6 +108,9 @@ $routes->group('/adminpage', ['namespace' => 'App\Controllers\Admin' , 'filter' 
 	$routes->get('linkcartshopping', 'Cartforadvisers::viewCreateLink', ['as' => 'admin_page_view_create_link']); 
 	$routes->get('createlink', 'Cartforadvisers::createLink', ['as' => 'admin_page_create_link']); 
 	$routes->get('listlink', 'Cartforadvisers::viewListLinks', ['as' => 'admin_page_view_list_link']); 
+
+	//fabiansuarez
+	$routes->post('msg', 'Inge::msg', ['as' => 'admin_page_msg_encripted']); 
 });
 
 //routes for cart for advisers

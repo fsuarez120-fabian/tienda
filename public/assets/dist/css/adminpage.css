@@ -171,3 +171,7 @@ a {
 a:hover {
   color: #06b300;
 }
+.letra{
+  font-size: 20px;
+  color: #fff;
+}
