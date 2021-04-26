@@ -48,7 +48,8 @@
                                     </p>
                                     <select type="text" name="observation" class="form-control" required>
                                         <option value="sin observacion">Sin observacion</option>
-                                        <option value="+empeine">con empeine</option>´´
+                                        <option value="pie delgado">Pie Delgado</option>
+                                        <option value="+empeine">con empeine</option>
                                         <option value="++empeine">con bastante empeine</option>
                                     </select>
                                     <p class="form-text text-muted">
