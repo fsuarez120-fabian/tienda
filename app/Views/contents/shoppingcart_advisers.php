@@ -43,7 +43,7 @@
                         </div>
                         <div class="member-info col">
                             <h4> <?php echo $item['name_product'] . '<span>Ref:' . $item['product_reference'] ?></span></h4>
-                            <p><b>Tipo:</b><?php echo ' ' . $item[' '] ?></p>
+                            <p><b>Tipo:</b><?php echo ' ' . $item['name_category'] ?></p>
                             <p><b>Talla:</b><?php echo ' ' . $item['size_idsize'] ?></p>
                             <p><b>Cantidad:</b><?php echo ' ' . $item['quantity_orderdetails'] ?></p>
                             <p><b>Horma:</b><?php echo ' ' . $item['horma_orderdetails'] ?></p>

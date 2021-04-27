@@ -122,7 +122,7 @@
                                     
                                     if (count($observations) > 1) {
                                         if ($category[0]['idcategory'] == 9) {
-                                            if ($products[0]['reference'] == 260 || $products[0]['reference'] == 262) {
+                                            if ($products[0]['reference'] == 260 || $products[0]['reference'] == 262|| $products[0]['reference'] == 281) {
 
                                                 echo '
                                                 <select type="text" name="observation" class="form-control" required>
