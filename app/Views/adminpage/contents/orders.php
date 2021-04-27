@@ -33,6 +33,7 @@
                         <p>Lo sentimos en este dia no hay pedidos.</p>
                       </div>';
                     }
+                    
                     foreach ($orders as $order) {
                         //d($order);
                     ?>
@@ -57,7 +58,9 @@
                                         break;
                                 } ?>
                                 <br>
-                                Consecutivo: <?= $order['consecutive_order'] ?>
+                                Consecutivo: <?= $order['consecutive_order'] ?>	
+                                <br>
+                                Referencia: <?= $order['shippinginfo_idshipinfo'] ?>
                             </a>
                             <div class="list-group-item list-group-item-action">
                                 <div class="row">
@@ -185,63 +188,68 @@
                                         </div>
                                     </div>
                                 </div>
+                                <?php
+                                if ($permission_transactions) :
+                                ?>
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="table table-success table-sm">
+                                                <thead>
+                                                    <tr>
 
-                                <div class="row">
-                                    <div class="table-responsive">
-                                        <table class="table table-success table-sm">
-                                            <thead>
-                                                <tr>
+                                                        <th>Id Transacci&oacute;n</th>
+                                                        <th style="width: 40px">Estado</th>
+                                                        <th>Ref Pay U</th>
+                                                        <th>Valor</th>
+                                                        <th>Fecha</th>
+                                                        <th>Cus</th>
+                                                        <th>pse_bank</th>
+                                                        <th>Mensaje de respuesta</th>
+                                                        <th>Id Metodo de pago</th>
+                                                        <th>Metodo de pago</th>
 
-                                                    <th>Id Transacci&oacute;n</th>
-                                                    <th style="width: 40px">Estado</th>
-                                                    <th>Ref Pay U</th>
-                                                    <th>Valor</th>
-                                                    <th>Fecha</th>
-                                                    <th>Cus</th>
-                                                    <th>pse_bank</th>
-                                                    <th>Mensaje de respuesta</th>
-                                                    <th>Id Metodo de pago</th>
-                                                    <th>Metodo de pago</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php if ($order['transactions']) {
+                                                        foreach ($order['transactions'] as $transaction) { ?>
+                                                            <tr>
+                                                                <td><?= $transaction['idtransaction'] ?></td>
+                                                                <td>
+                                                                    <?php switch ($transaction['state_pol']) {
+                                                                        case 4:
+                                                                            echo '<span class="badge bg-success">APROVADA</span>';
+                                                                            break;
+                                                                        case 6:
+                                                                            echo '<span class="badge bg-danger">DECLINADA</span>';
+                                                                            break;
+                                                                        case 5:
+                                                                            echo '<span class="badge bg-danger">EXPIRADA</span>';
+                                                                            break;
+                                                                        default:
+                                                                            echo '<span class="badge bg-danger">' . $transaction['state_pol'] . '</span>';
+                                                                            break;
+                                                                    } ?>
+                                                                </td>
+                                                                <td><?= $transaction['reference_pol'] ?></td>
+                                                                <td><?= $transaction['value'] ?></td>
+                                                                <td><?= $transaction['transaction_date'] ?></td>
+                                                                <td><?= $transaction['cus'] ?></td>
+                                                                <td><?= $transaction['pse_bank'] ?></td>
+                                                                <td><?= $transaction['response_message_pol'] ?></td>
+                                                                <td><?= $transaction['payment_method_id'] ?></td>
+                                                                <td><?= $transaction['payment_method_name'] ?></td>
+                                                            </tr>
+                                                    <?php }
+                                                    } ?>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php if ($order['transactions']) {
-                                                    foreach ($order['transactions'] as $transaction) { ?>
-                                                        <tr>
-                                                            <td><?= $transaction['idtransaction'] ?></td>
-                                                            <td>
-                                                                <?php switch ($transaction['state_pol']) {
-                                                                    case 4:
-                                                                        echo '<span class="badge bg-success">APROVADA</span>';
-                                                                        break;
-                                                                    case 6:
-                                                                        echo '<span class="badge bg-danger">DECLINADA</span>';
-                                                                        break;
-                                                                    case 5:
-                                                                        echo '<span class="badge bg-danger">EXPIRADA</span>';
-                                                                        break;
-                                                                    default:
-                                                                        echo '<span class="badge bg-danger">' . $transaction['state_pol'] . '</span>';
-                                                                        break;
-                                                                } ?>
-                                                            </td>
-                                                            <td><?= $transaction['reference_pol'] ?></td>
-                                                            <td><?= $transaction['value'] ?></td>
-                                                            <td><?= $transaction['transaction_date'] ?></td>
-                                                            <td><?= $transaction['cus'] ?></td>
-                                                            <td><?= $transaction['pse_bank'] ?></td>
-                                                            <td><?= $transaction['response_message_pol'] ?></td>
-                                                            <td><?= $transaction['payment_method_id'] ?></td>
-                                                            <td><?= $transaction['payment_method_name'] ?></td>
-                                                        </tr>
-                                                <?php }
-                                                } ?>
-
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
+                                <?php
+                                endif;
+                                ?>
                             </div>
                         </div>
                         <br>

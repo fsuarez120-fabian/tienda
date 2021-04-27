@@ -51,15 +51,14 @@ class Order extends BaseController
 
                 array_push($allOrders, $order);
             }
-
-            $data = array(
-                'orders' => $allOrders,
-                'date' => $date
-            );
             return view('adminpage/structure/header')
                 . view('adminpage/structure/navbar')
                 . view('adminpage/structure/sidebar')
-                . view('adminpage/contents/orders', $data)
+                . view('adminpage/contents/orders', [
+                    'orders' => $allOrders,
+                    'date' => $date,
+                    'permission_transactions' => $mdlPermission->hasPermission(7)
+                ])
                 . view('adminpage/structure/footer');
         } else {
             return view('adminpage/structure/header')
@@ -110,15 +109,14 @@ class Order extends BaseController
                 array_push($allOrders, $order);
             }
 
-            $data = array(
-                'orders' => $allOrders,
-                'date' => $date
-            );
-
             return view('adminpage/structure/header')
                 . view('adminpage/structure/navbar')
                 . view('adminpage/structure/sidebar')
-                . view('adminpage/contents/orders_only_transactions', $data)
+                . view('adminpage/contents/orders_only_transactions', [
+                    'orders' => $allOrders,
+                    'date' => $date,
+                    'permission_transactions' => $mdlPermission->hasPermission(7)
+                ])
                 . view('adminpage/structure/footer');
         } else {
             return view('adminpage/structure/header')
