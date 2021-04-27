@@ -11,7 +11,7 @@ use App\Models\ServientregaModel;
 use App\Models\ShippinginfoModel;
 use App\Models\TransactionModel;
 
-class Cartforadvisers extends BaseController
+class Cartforadvisers extends BaseController 
 {
     public function cartReference($reference)
     {
@@ -73,6 +73,7 @@ class Cartforadvisers extends BaseController
             'name_department' => $cityfound[0]['name_department'],
             'name_city' => $cityfound[0]['name_city']
         );
+       
 
         //Se trae la informacion del pedido que esta en la base de datos.
         $modelOrder = new OrderModel();
@@ -80,9 +81,9 @@ class Cartforadvisers extends BaseController
             echo "EL PEDIDO NO EXISTE";
             return;
         }
-
         $order['freight_price_order'] = $information['freight'];
-        $order['total_price_order'] = $order['total_price_order'] + $order['freight_price_order'];
+        $order['total_price_order'] = $order['product_price_order'] + $order['freight_price_order'];
+        
         $modelOrder->update($REFERENCE, $order);
 
         //Se modifica los datos de envio en la tabla ya que estos deben estar vacios.
