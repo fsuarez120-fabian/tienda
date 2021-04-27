@@ -54,6 +54,7 @@
                                     </select>
                                     <p class="form-text text-muted">
                                         <b>Si tu pie es ancho ten en cuenta estas observaciones</b><br>
+                                        Pie delgado = 0.5 centimetros menos ancho<br>
                                         +empeine = 0.5 centimetros más ancho<br>
                                         ++empeine = 1 centimetros más ancho
                                     </p>

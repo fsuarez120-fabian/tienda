@@ -13,9 +13,8 @@ class City extends BaseController
 
     public function getcities()
     {
-
         $modelCity = new CityModel();
-        $cities = $modelCity->where('department_city', $this->request->getPostGet('department'))->findAll();
+        $cities = $modelCity->where('department_city', $this->request->getPostGet('department'))->orderBy('name_city', 'ASC')->findAll();
         $cadena = "<select class='custom-select' name='city' required>
         <option value=''>* Ciudad</option>
         ";

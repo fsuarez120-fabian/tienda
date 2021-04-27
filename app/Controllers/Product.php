@@ -297,12 +297,14 @@ class Product extends BaseController
 
 			$observations = array(
 				'item1' => ['sin observacion', 'Sin Observación'],
+				'uten1' => ['pie delgado', 'Pie Delgado'],
 				'uten2' => ['+empeine', 'Con empeine'],
 				'uten3' => ['++empeine', 'Con bastante empeine'],
 			);
 			$messegeobservation =
 				'<p class="form-text text-muted">
 						<b>Si tu pie es ancho ten en cuenta estas observaciones</b><br>
+						Pie delgado = 0.5 centimetros menos ancho<br>
 						+empeine = 0.5 centimetro mas ancho<br>
 						++empeine = 1 centimetro mas ancho 
 					</p>';
@@ -395,12 +397,14 @@ class Product extends BaseController
 			case 2:
 				$observations = array(
 					'item1' => ['sin observacion', 'Sin Observación'],
+					'uten1' => ['pie delgado', 'Pie Delgado'],
 					'uten2' => ['+empeine', 'Con empeine'],
 					'uten3' => ['++empeine', 'Con bastante empeine'],
 				);
 				$messegeobservation =
 					'<p class="form-text text-muted">
 						<b>Si tu pie es ancho ten en cuenta estas observaciones</b><br>
+						Pie delgado = 0.5 centimetros menos ancho<br>
 						+empeine = 0.5 centimetro mas ancho<br>
 						++empeine = 1 centimetro mas ancho
 					</p>';
