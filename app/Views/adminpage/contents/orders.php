@@ -33,7 +33,7 @@
                         <p>Lo sentimos en este dia no hay pedidos.</p>
                       </div>';
                     }
-                    
+
                     foreach ($orders as $order) {
                         //d($order);
                     ?>
@@ -53,12 +53,15 @@
                                     case 'EXPIRED':
                                         echo '<span class="badge bg-danger">EXPIRADA</span>';
                                         break;
+                                    case 'DISABLED':
+                                        echo '<span class="badge bg-primary">DESHABILITADA</span>';
+                                        break;
                                     default:
-                                        echo '<span class="badge bg-danger">' . $transaction['state_pol'] . '</span>';
+                                        echo '<span class="badge bg-danger">' . $order['state_order'] . '</span>';
                                         break;
                                 } ?>
                                 <br>
-                                Consecutivo: <?= $order['consecutive_order'] ?>	
+                                Consecutivo: <?= $order['consecutive_order'] ?>
                                 <br>
                                 Referencia: <?= $order['shippinginfo_idshipinfo'] ?>
                             </a>

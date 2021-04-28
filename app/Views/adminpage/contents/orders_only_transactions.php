@@ -52,8 +52,11 @@
                                     case 'EXPIRED':
                                         echo '<span class="badge bg-danger">EXPIRADA</span>';
                                         break;
+                                    case 'DISABLED':
+                                        echo '<span class="badge bg-primary">DESHABILITADA</span>';
+                                        break;
                                     default:
-                                        echo '<span class="badge bg-danger">' . $transaction['state_pol'] . '</span>';
+                                        echo '<span class="badge bg-danger">' . $order['state_order'] . '</span>';
                                         break;
                                 } ?>
                                 <br>
