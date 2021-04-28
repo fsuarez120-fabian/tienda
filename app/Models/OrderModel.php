@@ -69,4 +69,13 @@ class OrderModel extends Model
                 ->get()->getResultArray();
         }
     }
+
+    public function getState($reference){
+        return $this->where('reference_order',$reference)->first()['state_order'];
+    }
+
+    public function disableLink($reference){
+        return $this->set('state_order','DISABLED')->where('reference_order',$reference)->update();
+    }
+
 }

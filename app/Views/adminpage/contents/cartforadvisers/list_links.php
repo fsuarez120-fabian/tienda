@@ -31,11 +31,21 @@
                                     <h3 class="card-title">Listado de links creador por <b><?= $cedula ?></b></h3>
                                     <div class="card-tools">
                                         <div class="input-group input-group-sm" style="width: 150px;">
-                                            <form action="<?= base_url().route_to('admin_page_view_list_link') ?>" method="get">
-                                                <input type="number" name="id_identification" class="form-control float-right" placeholder="Cedula">
-                                                <button type="submit">
-                                                    <i class="fas fa-search"></i>
-                                                </button>
+                                            <form action="<?= base_url() . route_to('admin_page_view_list_link') ?>" method="get">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <input type="number" name="id_identification" class="form-control float-right" placeholder="Cedula">
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="input-group-append">
+                                                            <button type="submit" class="btn btn-default">
+                                                                <i class="fas fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
                                             </form>
                                         </div>
                                     </div>
@@ -45,14 +55,13 @@
                                     <table class="table table-hover text-nowrap">
                                         <thead>
                                             <tr>
-                                                <th>Consecutivo</th>
-                                                <th>ID</th>
+                                                <th>Conse.</th>
                                                 <th>Url Link</th>
                                                 <th>Referencia</th>
                                                 <th>Fecha</th>
-                                                <th>Hora</th>
                                                 <th>Total</th>
                                                 <th>Estado</th>
+                                                <th>Acci&oacute;n</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -61,34 +70,59 @@
                                             ?>
 
                                                 <tr>
-                                                    <td><?= $link['consecutive_order'] ?></td>
-                                                    <td><?= $link['id_link'] ?></td>
-                                                    <td><a target="”_blank”" href="<?= $link['url_link'] ?>"><?= $link['url_link'] ?></a></td>
-                                                    <td><?= $link['order_link'] ?></td>
-                                                    <td><?= $link['date_link'] ?></td>
-                                                    <td><?= $link['hour_link'] ?></td>
-                                                    <td><?= $link['total_price_order'] ?></td>
-                                                    <td>
-                                                        <?php switch ($link['state_order']) {
-                                                            case 'PENDING':
-                                                                echo '<span class="badge bg-warning">PENDING</span>';
-                                                                break;
-                                                            case 'APPROVED':
-                                                                echo '<span class="badge bg-success">APROBADA</span>';
-                                                                break;
-                                                            case 'DECLINED':
-                                                                echo '<span class="badge bg-danger">DECLINADA</span>';
-                                                                break;
-                                                            case 'EXPIRED':
-                                                                echo '<span class="badge bg-danger">EXPIRADA</span>';
-                                                                break;
-                                                            default:
-                                                                echo '<span class="badge bg-danger">' . $transaction['state_pol'] . '</span>';
-                                                                break;
-                                                        } ?>
-                                                    </td>
+                                                    <form action="<?= base_url() . route_to('admin_page_disableLink') ?>" method="post">
+                                                        <td>
+                                                            <?= $link['consecutive_order'] ?><br>
+                                                            <b>Id: </b> <?= $link['id_link'] ?>
+                                                        </td>
+                                                        <td><a target="”_blank”" href="<?= $link['url_link'] ?>"><?= $link['url_link'] ?></a></td>
+                                                        <td>
+                                                            <?= $link['order_link'] ?>
+                                                            <input type="hidden" name="reference" value="<?= $link['order_link'] ?>">
+                                                        </td>
+                                                        <td>
+                                                            <?= $link['date_link'] ?><br>
+                                                            <?= $link['hour_link'] ?>
+                                                        </td>
+                                                        <td>$ <?= number_format($link['total_price_order'], 0, ',', '.') ?></td>
+                                                        <td>
+                                                            <?php switch ($link['state_order']) {
+                                                                case 'PENDING':
+                                                                    echo '<span class="badge bg-warning">PENDING</span>';
+                                                                    break;
+                                                                case 'APPROVED':
+                                                                    echo '<span class="badge bg-success">APROBADA</span>';
+                                                                    break;
+                                                                case 'DECLINED':
+                                                                    echo '<span class="badge bg-danger">DECLINADA</span>';
+                                                                    break;
+                                                                case 'EXPIRED':
+                                                                    echo '<span class="badge bg-danger">EXPIRADA</span>';
+                                                                    break;
+                                                                case 'DISABLED':
+                                                                    echo '<span class="badge bg-primary">DESHABILITADA</span>';
+                                                                    break;
+                                                                default:
+                                                                    echo '<span class="badge bg-danger">' . $link['state_order'] . '</span>';
+                                                                    break;
+                                                            } ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php if ($link['state_order'] == 'PENDING') : ?>
+                                                                <div class="icon">
+                                                                    <button type="submit">
+                                                                        <i class="fas fa-window-close"></i>
+                                                                    </button>
+                                                                </div>
+                                                            <?php
+                                                            endif;
+                                                            ?>
 
+                                                        </td>
+                                                    </form>
                                                 </tr>
+
+
 
                                             <?php
                                             endforeach;

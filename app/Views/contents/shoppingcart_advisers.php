@@ -83,9 +83,10 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <?php
+                                
                                 if (count($transactions) > 0) {
+                                    echo '<h1>ESTADO:</h1>';
                                     foreach ($transactions as $trans) {
-                                        echo '<h1>ESTADO:</h1>';
                                         if ($trans['state_pol'] == 4) {
                                             echo '<h3>Pedido Aprobado</h3>';
                                         } else if ($trans['state_pol'] == 6) {
@@ -98,6 +99,10 @@
                                             echo '<h3>Pedido Expirado</h3>';
                                         }
                                     }
+                                } else if ($order['state_order'] == 'DISABLED') {
+                                    echo '<h1>ESTADO:</h1>';
+                                    echo '<h3>Link Deshabilitado, ponte en contacto con tu asesor.</h3>';
+                                   
                                 } else {
                                 ?>
                                     <h3>Datos de Env&iacute;o</h3>

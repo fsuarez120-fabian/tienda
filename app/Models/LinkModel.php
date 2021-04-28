@@ -40,6 +40,17 @@ class LinkModel extends Model
             ->join('order', 'order.reference_order = link.order_link')
             ->where($column,$value)->orderBy('id_link','desc')
             ->get()->getResultArray();
-       
+    }
+
+    public function isLink($reference){
+        if(!$this->where('order_link',$reference)->first()){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public function getCedula($reference){
+        return $this->where('order_link',$reference)->first()['admin_link'];
     }
 }

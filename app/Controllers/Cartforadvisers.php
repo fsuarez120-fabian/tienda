@@ -18,6 +18,7 @@ class Cartforadvisers extends BaseController
         $modelDetailIOrder = new OrderdetailsModel();
         $modelDepart = new DepartamentModel();
         $modelTransactions = new TransactionModel();
+        $modelOrder = new OrderModel();
 
 
 
@@ -27,7 +28,8 @@ class Cartforadvisers extends BaseController
                 'listproducts' => $modelDetailIOrder->getItemWithCategoryAndProduct($reference),
                 'departments' =>  $modelDepart->findAll(),
                 'reference' => $reference,
-                'transactions' => $modelTransactions->getTransactionBy('reference_sale', $reference)
+                'transactions' => $modelTransactions->getTransactionBy('reference_sale', $reference),
+                'order' => $modelOrder->find($reference)
             ])
             . view('structure/footer');
     }
