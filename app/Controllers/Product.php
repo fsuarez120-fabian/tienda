@@ -56,8 +56,8 @@ class Product extends BaseController
 			return view('errors/html/production');
 		}
 	}
-	
-	
+
+
 	public function listofcuerina()
 	{
 		//List of product of
@@ -84,7 +84,7 @@ class Product extends BaseController
 			. view('contents/list_cuerina', $products)
 			. view('structure/footer');
 	}
-	
+
 	public function detailcuerina($ref, $cat)
 	{ //this method show the detail of falda-legings-bicicletero
 
@@ -114,7 +114,7 @@ class Product extends BaseController
 
 
 			$observations = array();
-			$messegeobservation ='';
+			$messegeobservation = '';
 			$messegesize =
 				'<p class="form-text text-muted">
 						<b>Se recomienda pedir la talla que más uses en Jeans nacional <img src="' . base_url() . route_to('images_peradk') . '/colombia.svg" alt="" style="width: 20px;">.</b>
@@ -395,6 +395,7 @@ class Product extends BaseController
 						</p>';
 				break;
 			case 2:
+
 				$observations = array(
 					'item1' => ['sin observacion', 'Sin Observación'],
 					'uten1' => ['pie delgado', 'Pie Delgado'],
@@ -408,11 +409,25 @@ class Product extends BaseController
 						+empeine = 0.5 centimetro mas ancho<br>
 						++empeine = 1 centimetro mas ancho
 					</p>';
-				$messegesize =
-					'<p class="form-text text-muted">
-						<b>Se recomienda pedir la talla que más uses en calzado nacional <img src="' . base_url() . route_to('images_peradk') . '/colombia.svg" alt="" style="width: 20px;">.</b>
-					</p>';
+				if (
+					$product[0]['reference'] == 1004 &&
+					$category[0]['idcategory'] == 2
+				) {
+					$messegesize =
+						'<p class="form-text text-muted">
+							<b>SOLO DISPONIBLE PARA CABALLERO</b>
+							<br>
+							Se recomienda pedir la talla que más uses en calzado nacional <img src="' . base_url() . route_to('images_peradk') . '/colombia.svg" alt="" style="width: 20px;">.
+							
+						</p>';
+				} else {
+					$messegesize =
+						'<p class="form-text text-muted">
+							<b>Se recomienda pedir la talla que más uses en calzado nacional <img src="' . base_url() . route_to('images_peradk') . '/colombia.svg" alt="" style="width: 20px;">.</b>
+						</p>';
+				}
 				break;
+
 			case 9:
 				$observations = array(
 					'item0' => ['', 'Tipo [adulto - niño]'],
@@ -420,7 +435,7 @@ class Product extends BaseController
 					'uten2' => ['nino', 'Niño']
 				);
 				$messegeobservation =
-				'<p class="form-text text-muted">
+					'<p class="form-text text-muted">
 					<b>Escoge el tipo de Leggings que deseas.</b><br>
 				</p>';
 				$messegesize =
@@ -535,7 +550,7 @@ class Product extends BaseController
 			$CategoryModel = new CategoryModel();
 			$Category = $CategoryModel->find($this->request->getPostGet('category'));
 			$size = $this->request->getPostGet('size');
-            $observation =  $this->request->getPostGet('observation');
+			$observation =  $this->request->getPostGet('observation');
 			//determinar si es legging de niña para cobrarlo al precio que es....
 			if ($Category['idcategory'] == 9) {
 				//qui determinamos el precio
@@ -793,7 +808,7 @@ class Product extends BaseController
 	}
 
 
-	public function calculatefreight($citydestination)//OJO TENER EN CUENTA QUE ESTE METODO ESTA EN EL CONTROLADOR DE ADMIN/CARTFORADVISERS DEBEN SER IGUALES
+	public function calculatefreight($citydestination) //OJO TENER EN CUENTA QUE ESTE METODO ESTA EN EL CONTROLADOR DE ADMIN/CARTFORADVISERS DEBEN SER IGUALES
 	{
 		$ORIGIN_CITY = 442;
 		$modelServientrega = new ServientregaModel();

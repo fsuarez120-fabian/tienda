@@ -23,9 +23,8 @@
 
                                     <?php
                                     if (count($sizes) >= 1) {
-                                        
                                         if ($category[0]['idcategory'] == 2) {
-                                            if ($products[0]['reference']==1004) {
+                                            if ($products[0]['reference'] == 1004) {
                                                 echo ' <select name="size" class="form-control" required>
                                                 <option value="">Talla</option>
                                                 <option value="37">37</option>
@@ -37,7 +36,6 @@
                                                 <option value="43">43</option>
                                                 <option value="44">44</option>
                                                 <option value="45">45</option>
-                                                
                                                 ';
                                             } else {
                                                 echo ' <select name="size" class="form-control" required>
@@ -47,9 +45,8 @@
                                                 }
                                             }
                                         } else {
-
                                             echo ' <select name="size" class="form-control" required>
-                                        <option value="">Talla</option>';
+                                                <option value="">Talla</option>';
                                             foreach ($sizes as $size) {
                                                 echo  '<option value="' . $size['size_idsize'] . '">' . $size['size_idsize'] . '</option>';
                                             }
@@ -72,9 +69,9 @@
                                                             <option value="14">14</option>
                                                             <option value="16">16</option>
                                                     ';
-                                                    break; 
-                                                    
-                                                    
+                                                    break;
+
+
                                                 case 5:
                                                     echo  '<option value="28">28</option>
                                                             <option value="30">30</option>
@@ -83,9 +80,9 @@
                                                             <option value="36">36</option>
                                                             <option value="38">38</option>
                                                     ';
-                                                    break; 
-                                                    
-                                                     case 4:
+                                                    break;
+
+                                                case 4:
                                                     echo  '<option value="28">28</option>
                                                             <option value="30">30</option>
                                                             <option value="32">32</option>
@@ -93,8 +90,7 @@
                                                             <option value="36">36</option>
                                                             <option value="38">38</option>
                                                     ';
-                                                    break; 
-                                                    
+                                                    break;
                                                 default:
                                                     echo
                                                     '
@@ -110,7 +106,7 @@
                                             }
                                             echo ' </select>';
                                             echo $messegesize;
-                                        }else{
+                                        } else {
                                             echo '<input type="hidden" name="size" value="">';
                                         }
                                     }
@@ -119,11 +115,10 @@
 
 
                                     <?php
-                                    
+
                                     if (count($observations) > 1) {
                                         if ($category[0]['idcategory'] == 9) {
-                                            if ($products[0]['reference'] == 260 || $products[0]['reference'] == 262|| $products[0]['reference'] == 281) {
-
+                                            if ($products[0]['reference'] == 260 || $products[0]['reference'] == 262 || $products[0]['reference'] == 281) {
                                                 echo '
                                                 <select type="text" name="observation" class="form-control" required>
                                                     <option value="">Tipo [adulto - niño] Esta referencia solo está en adulto</option>
@@ -133,7 +128,6 @@
                                                     <b>Escoge el tipo de Leggings que deseas.</b><br>	
                                                 </p>
                                                 ';
-
                                             } else {
                                                 echo '<select type="text" name="observation" class="form-control" required>';
                                                 foreach ($observations as $observation) {
@@ -154,11 +148,14 @@
                                         echo '<input type="hidden" name="observation" value="ninguna">';
                                     }
                                     if ($category[0]['idcategory'] == 2) {
-                                        echo '<input type="hidden" name="horma" value="mujer">';
+                                        if ($products[0]['reference'] == 1004) {
+                                            echo '<input type="hidden" name="horma" value="hombre">';
+                                        } else {
+                                            echo '<input type="hidden" name="horma" value="mujer">';
+                                        }
                                     } else {
                                         echo '<input type="hidden" name="horma" value="">';
                                     }
-
                                     ?>
 
                                 </div>
@@ -183,6 +180,11 @@
                             </select>
                             <p class="form-text text-muted">
                                 <b>Escoja la cantidad de PeRa productos que deseas 🍐.</b><br>
+                                <?php
+                                if ($category[0]['idcategory'] == 6) {
+                                    echo "Lleva 1 PeRa Rizos más flete de envío. A partir de 2 unidades el envío es GRATIS.";
+                                }
+                                ?>
                             </p>
                             <div class="row">
                                 <div class="col-1"></div>
