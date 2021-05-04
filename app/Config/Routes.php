@@ -54,7 +54,7 @@ $routes->get('/productos/plataformas/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/specials/(:num)/(:num)', 'Product::detailspecials/$1/$2');
 $routes->get('/productos/leggings/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/rizos/(:num)', 'Product::detailproductssize/$1');
-$routes->get('/productos/medias/(:num)', 'Product::detailproductssize/$1');
+//$routes->get('/productos/medias/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/bodycuellotortuga/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/cuerina/(:num)/(:num)', 'Product::detailcuerina/$1/$2');
 $routes->get('/productos/busos/(:num)', 'Product::detailproductssize/$1');
