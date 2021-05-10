@@ -156,7 +156,7 @@ class Product extends BaseController
 		$products = $productModel
 			->where($whereproduct)
 			->where('active_product', 'si')
-			->orderBy('reference', 'desc')
+			->orderBy('score_product', 'asc')
 			->findAll();
 		$products = array(
 			'products' => $products,

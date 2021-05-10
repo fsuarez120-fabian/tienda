@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 28-04-2021 a las 15:08:33
--- Versión del servidor: 10.2.36-MariaDB-cll-lve
+-- Tiempo de generación: 10-05-2021 a las 15:03:57
+-- Versión del servidor: 10.2.37-MariaDB-cll-lve
 -- Versión de PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -172,7 +172,8 @@ CREATE TABLE `product` (
   `category_idcategory` int(11) NOT NULL,
   `name_product` varchar(45) NOT NULL,
   `active_product` varchar(45) NOT NULL,
-  `image_product` varchar(100) NOT NULL
+  `image_product` varchar(100) NOT NULL,
+  `score_product` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
