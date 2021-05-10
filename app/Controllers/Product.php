@@ -298,8 +298,8 @@ class Product extends BaseController
 			$observations = array(
 				'item1' => ['sin observacion', 'Sin Observación'],
 				'uten1' => ['pie delgado', 'Pie Delgado'],
-				'uten2' => ['+empeine', 'Con empeine'],
-				'uten3' => ['++empeine', 'Con bastante empeine'],
+				'uten2' => ['+empeine', '+Empeine'],
+				'uten3' => ['++empeine', '++Empeine'],
 			);
 			$messegeobservation =
 				'<p class="form-text text-muted">
@@ -399,8 +399,8 @@ class Product extends BaseController
 				$observations = array(
 					'item1' => ['sin observacion', 'Sin Observación'],
 					'uten1' => ['pie delgado', 'Pie Delgado'],
-					'uten2' => ['+empeine', 'Con empeine'],
-					'uten3' => ['++empeine', 'Con bastante empeine'],
+					'uten2' => ['+empeine', '+Empeine'],
+					'uten3' => ['++empeine', '++Empeine'],
 				);
 				$messegeobservation =
 					'<p class="form-text text-muted">

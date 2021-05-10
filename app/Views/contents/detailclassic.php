@@ -49,8 +49,8 @@
                                     <select type="text" name="observation" class="form-control" required>
                                         <option value="sin observacion">Sin observacion</option>
                                         <option value="pie delgado">Pie Delgado</option>
-                                        <option value="+empeine">con empeine</option>´´
-                                        <option value="++empeine">con bastante empeine</option>
+                                        <option value="+empeine">+Empeine</option>´´
+                                        <option value="++empeine">++Empeine</option>
                                     </select>
                                     <p class="form-text text-muted">
                                         <b>Si tu pie es ancho ten en cuenta estas observaciones</b><br>
