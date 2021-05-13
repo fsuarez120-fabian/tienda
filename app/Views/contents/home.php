@@ -42,11 +42,11 @@
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url()  . route_to('show_produts', 'tapabocas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tapabocas.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/jeans.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/sisa.jpeg" alt=""></a></div>
-                 
-                
-                
+
+
+
                 <div class="d-none d-lg-block d-xl-block w-100"></div>
-                
+
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/larga.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodycuellotortuga') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/cuellotortuga.png" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pantaloneta.jpeg" alt=""></a></div>
@@ -131,7 +131,22 @@
                                 </a>
 
                             </div>
-                           
+
+                            <div class="col">
+                                <a href="https://peradk.com/public/archivos/pera_kids.pdf" target="”_blank”">
+                                    <div class="address">
+                                        <i class="icofont-pear"></i>
+                                        <h4>Cat&aacute;logo PeRa Camisetas Kids</h4>
+
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="row">
                             <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_body_cuello_tortuga.pdf" target="”_blank”">
                                     <div class="address">
@@ -140,11 +155,7 @@
                                     </div>
                                 </a>
                             </div>
-                            
-                        </div>
-
-                        <div class="row">
-                             <div class="col">
+                            <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_body_sisa.pdf" target="”_blank”">
                                     <div class="address">
                                         <i class="icofont-pear"></i>
@@ -152,6 +163,11 @@
                                     </div>
                                 </a>
                             </div>
+
+
+
+                        </div>
+                        <div class="row">
                             <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_body_manga_larga.pdf" target="”_blank”">
                                     <div class="address">
@@ -161,10 +177,6 @@
                                     </div>
                                 </a>
                             </div>
-                            
-
-                        </div>
-                        <div class="row">
                             <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_pantalonetas.pdf" target="”_blank”">
                                     <div class="address">
@@ -173,7 +185,13 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="col">
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_jeans_dama.pdf" target="”_blank”">
                                     <div class="address">
                                         <i class="icofont-pear"></i>
@@ -181,11 +199,6 @@
                                     </div>
                                 </a>
                             </div>
-                            
-                        </div>
-
-
-                        <div class="row">
                             <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_leggings.pdf" target="”_blank”">
                                     <div class="address">
@@ -194,8 +207,10 @@
                                     </div>
                                 </a>
                             </div>
-                            
-                           <div class="col">
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_pijamas.pdf" target="”_blank”">
                                     <div class="address">
                                         <i class="icofont-pear"></i>
@@ -203,19 +218,8 @@
                                     </div>
                                 </a>
                             </div>
-                            
-                        </div>
-                        <div class="row">
-                            
-                             <div class="col">
-                                <a href="https://peradk.com/public/archivos/pera_cuerina.pdf" target="”_blank”">
-                                    <div class="address">
-                                        <i class="icofont-pear"></i>
-                                        <h4>Cat&aacute;logo PeRa Cuerina</h4>
 
-                                    </div>
-                                </a>
-                            </div>
+
                             <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_familia.pdf" target="”_blank”">
                                     <div class="address">
