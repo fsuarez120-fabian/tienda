@@ -492,6 +492,19 @@ class Product extends BaseController
 									
 								</p>';
 				break;
+			case 23:
+				$observations = array(
+					
+				);
+				$messegeobservation =
+					'';
+				$messegesize =
+					' <p class="form-text text-muted">
+							<b>PeRa amiguis pide la talla que mas utilizas en camiseta nacional <img src="' . base_url() . route_to('images_peradk') . '/colombia.svg" alt="" style="width: 20px;">.
+							</b>	
+						</p>';
+				break;
+
 			default:
 				$observations = array();
 				$messegeobservation =

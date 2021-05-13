@@ -145,7 +145,7 @@
                                             echo $messegeobservation;
                                         }
                                     } else {
-                                        echo '<input type="hidden" name="observation" value="ninguna">';
+                                        echo '<input type="hidden" name="observation" value="">';
                                     }
                                     if ($category[0]['idcategory'] == 2) {
                                         if ($products[0]['reference'] == 1004) {
@@ -153,6 +153,16 @@
                                         } else {
                                             echo '<input type="hidden" name="horma" value="mujer">';
                                         }
+                                    } else if ($category[0]['idcategory'] == 23) {
+                                        echo '<select name="horma" class="form-control" required>
+                                            <option value="">Tipo[Niño - Niña]</option>
+                                            <option value="nino">Niño</option>
+                                            <option value="nina">Niña</option>
+                                            </select>
+                                            <p class="form-text text-muted">
+                                            <b>Horma para Niño y Niña 🍐</b><br>
+
+                                            </p>';
                                     } else {
                                         echo '<input type="hidden" name="horma" value="">';
                                     }
