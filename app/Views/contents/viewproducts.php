@@ -13,7 +13,7 @@
             <?php
             foreach ($products as $product) {
             ?>
-                <div class="col-12 col-md-4 col-lg-<?php if($product['category_idcategory'] == 22){echo '4';}else{echo'3';}?>">
+                <div class="col-12 col-md-4 col-lg-<?php if($product['category_idcategory'] == 22||$product['category_idcategory'] == 10){echo '4';}else{echo'3';}?>">
                     <div class="member align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                         <div class="text-center">
                             <a href="<?= base_url('productos') . '/' . $route . '/' .  $product['reference'];

@@ -44,6 +44,25 @@
                                                     echo  '<option value="' . $size['size_idsize'] . '">' . $size['size_idsize'] . '</option>';
                                                 }
                                             }
+                                        } else if ($category[0]['idcategory'] == 4 || $category[0]['idcategory'] == 3) {
+                                            if ($products[0]['reference'] == 262) {
+                                                echo ' <select name="size" class="form-control" required>
+                                                <option value="">Talla</option>
+                                                <option value="XS">XS</option>
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                                <option value="XXL">XXL</option>
+                                                <option value="XXXL">XXXL</option>
+                                                ';
+                                            } else {
+                                                echo ' <select name="size" class="form-control" required>
+                                                <option value="">Talla</option>';
+                                                foreach ($sizes as $size) {
+                                                    echo  '<option value="' . $size['size_idsize'] . '">' . $size['size_idsize'] . '</option>';
+                                                }
+                                            }
                                         } else {
                                             echo ' <select name="size" class="form-control" required>
                                                 <option value="">Talla</option>';
@@ -57,7 +76,7 @@
 
                                         if ($category[0]['idcategory'] == 10) {
                                             echo ' <select name="size" class="form-control" required>
-                                            <option value="">Talla</option>';
+                                            <option value="">Tallas Disponibles</option>';
                                             switch ($products[0]['reference']) {
                                                 case 8:
                                                     echo  '
@@ -83,11 +102,8 @@
                                                     break;
 
                                                 case 4:
-                                                    echo  '<option value="28">28</option>
-                                                            <option value="30">30</option>
-                                                            <option value="32">32</option>
+                                                    echo  ' <option value="30">30</option>
                                                             <option value="34">34</option>
-                                                            <option value="36">36</option>
                                                             <option value="38">38</option>
                                                     ';
                                                     break;
