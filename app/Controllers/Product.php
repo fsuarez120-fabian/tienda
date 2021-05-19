@@ -192,7 +192,9 @@ class Product extends BaseController
 				$data = array(
 					'products' => $product,
 					'category' => $category[0],
-					'sizes' => $sizes
+					'sizes' => $sizes,
+					'productkid' => $productModel->where("(category_idcategory=23)
+					AND reference=$ref")->findAll()
 				);
 
 				return view('structure/header')
@@ -493,9 +495,7 @@ class Product extends BaseController
 								</p>';
 				break;
 			case 23:
-				$observations = array(
-					
-				);
+				$observations = array();
 				$messegeobservation =
 					'';
 				$messegesize =
@@ -559,9 +559,43 @@ class Product extends BaseController
 	{
 		//ADD PRODUCT TO SHOPPING CART
 		if ($this->request->getPostGet('r') == 'addproduct') {
-			$item = 'ref' . $this->request->getPostGet('reference') . 'cat' . $this->request->getPostGet('category') . $this->request->getPostGet('observation') . $this->request->getPostGet('size') . $this->request->getPostGet('horma');
+
+			
+
+			$idcategory = $this->request->getPostGet('category');
+			$horma = $this->request->getPostGet('horma');
+			$reff = $this->request->getPostGet('reference');
+			$name = $this->request->getPostGet('name');
+			$image = $this->request->getPostGet('image');
+
+			//modificacion para las camisetas de niño que viene del detal de adultos
+			if ($idcategory == 12 || $idcategory == 120) {
+				switch ($horma) {
+					case 'hombre':
+						$idcategory = $this->request->getPostGet('category');
+						break;
+					case 'mujer':
+						$idcategory = $this->request->getPostGet('category');
+						break;
+					case 'nino':
+						$idcategory = 23;
+						break;
+					case 'nina':
+						$idcategory = 23;
+						break;
+				}
+				$productModel = new ProductModel();
+				$product = $productModel->where('category_idcategory',$idcategory)->where('reference',$reff)->first();
+				$name = $product['name_product'];
+				$image = $product['image_product'];
+			}
+
+		
+			//---------------
+
+			$item = 'ref' . $reff . 'cat' .  $idcategory . $this->request->getPostGet('observation') . $this->request->getPostGet('size') . $horma;
 			$CategoryModel = new CategoryModel();
-			$Category = $CategoryModel->find($this->request->getPostGet('category'));
+			$Category = $CategoryModel->find($idcategory);
 			$size = $this->request->getPostGet('size');
 			$observation =  $this->request->getPostGet('observation');
 			//determinar si es legging de niña para cobrarlo al precio que es....
@@ -578,18 +612,19 @@ class Product extends BaseController
 
 			$newItem = [
 				$item => [
-					'reference'  => $this->request->getPostGet('reference'),
+					'reference'  => $reff,
 					'category'     => $Category['name_category'],
-					'name'     => $this->request->getPostGet('name'),
-					'observation'     => $this->request->getPostGet('observation'),
+					'name'     => $name,
+					'observation'  => $this->request->getPostGet('observation'),
 					'quantity'     => $this->request->getPostGet('quantity'),
-					'price'     => $price,
-					'image' => $this->request->getPostGet('image'),
-					'size' => $this->request->getPostGet('size'),
-					'horma' => $this->request->getPostGet('horma'),
-					'idcategory'     => $Category['idcategory']
+					'price' => $price,
+					'image' => $image,
+					'size' => $size,
+					'horma' => $horma,
+					'idcategory'=> $Category['idcategory']
 				]
 			];
+
 			if (isset($_SESSION['shoppingcart'])) {
 				$this->session->push('shoppingcart', $newItem);
 			} else {

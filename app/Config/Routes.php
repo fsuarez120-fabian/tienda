@@ -39,7 +39,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/productos/(:alpha)', 'Product::viewproducts/$1', ['as' => 'show_produts']);
 $routes->get('/camisetas', 'Product::listofshirts', ['as' => 'list_shirts']);
 $routes->get('/specials', 'Product::listofspecials', ['as' => 'list_specials']);
-$routes->get('/cuerina', 'Product::listofcuerina', ['as' => 'list_cuerina']);
+//$routes->get('/cuerina', 'Product::listofcuerina', ['as' => 'list_cuerina']);
 
 //routes of products detail
 $routes->get('/productos/clasicas/(:num)', 'Product::detailclassic/$1');
@@ -56,7 +56,7 @@ $routes->get('/productos/leggings/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/rizos/(:num)', 'Product::detailproductssize/$1');
 //$routes->get('/productos/medias/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/bodycuellotortuga/(:num)', 'Product::detailproductssize/$1');
-$routes->get('/productos/cuerina/(:num)/(:num)', 'Product::detailcuerina/$1/$2');
+//$routes->get('/productos/cuerina/(:num)/(:num)', 'Product::detailcuerina/$1/$2');
 $routes->get('/productos/busos/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/kids/(:num)', 'Product::detailproductssize/$1');
 
@@ -69,6 +69,9 @@ $routes->get('/cities', 'City::getcities');
 $routes->post('/finalizarcompra', 'Product::finalizepurchase', ['as' => 'finalize']);
 $routes->get('/finalizarcompra', 'Product::redirectcart');
 $routes->post('/borraitem', 'Product::deleteitemcart', ['as' => 'deleteitemcart']);
+$routes->post('/shirtsizes', 'Size::getSizes');
+$routes->get('/shirtsizes', 'Size::getSizes');
+
 
 //routes of pictures
 $routes->add('/public/pictures/productos/', '', ['as' => 'images_products']);

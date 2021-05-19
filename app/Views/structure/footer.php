@@ -88,6 +88,7 @@
 
 <!-- Template Main JS File -->
 <script src="<?php echo base_url() ?>/public/assets/js/main.js"></script>
+<script src="<?php echo base_url() ?>/public/assets/js/ajax_tienda.js"></script>
 
 
 

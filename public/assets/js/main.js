@@ -247,17 +247,3 @@ function reloadcities() {
   });
 }
 
-//mostrar el modal de la pagina de inicio
-
-$(document).ready(function () {
-
-  $("#modal-container-608086").modal("toggle");
- // $(".venobox").click();
-  
-});
-
-
-$(".carousel").carousel({
-  interval: 2000,
-  keyboard: true
-});

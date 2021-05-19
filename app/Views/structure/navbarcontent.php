@@ -31,8 +31,8 @@
                                 <li><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>">PeRa Body Manga Larga</a></li>
                                 <li><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>">PeRa Body Manga Sisa</a></li>
                                 <li><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>">PeRa Pantalonetas</a></li>
-                                <li><a href="<?= base_url('/productos/medias/1') ?>">PeRa Medias</a></li>
-                                <li><a href="<?= base_url() . route_to('list_cuerina') ?>">PeRa Cuerina</a></li>
+                                <!-----<li><a href="<?= base_url('/productos/medias/1') ?>">PeRa Medias</a></li>
+                                <li><a href="<?= base_url() . route_to('list_cuerina') ?>">PeRa Cuerina</a></li>---->
                                 <li><a href="<?= base_url() . route_to('show_produts', 'busos') ?>">PeRa Busos Hombre</a></li>
                             </ul>
                         </li>

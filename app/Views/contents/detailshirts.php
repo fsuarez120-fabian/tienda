@@ -19,31 +19,96 @@
                                 <h1>$ <?= number_format($category['price_category']) ?></h1>
                             </div>
                             <div class="row">
+
                                 <div class="col">
-                                    <select class="form-control" name="size" required>
-                                        <option value="">Talla </option>
+                                    <select name="horma" id="horma" class="form-control" required>
+                                        <option value="">* Horma</option>
+                                        <option value="mujer">Mujer</option>
                                         <?php
-                                        foreach ($sizes as $size) {
-                                            echo '<option value="'.$size['size_idsize'].'">'.$size['size_idsize'].'</option>';
-                                        }
+                                        if (!($products[0]['reference'] == 96
+                                            || $products[0]['reference'] == 93
+                                            || $products[0]['reference'] == 92
+                                            || $products[0]['reference'] == 91
+                                            || $products[0]['reference'] == 90
+                                            || $products[0]['reference'] == 89
+                                            || $products[0]['reference'] == 88
+                                            || $products[0]['reference'] == 95
+                                            || $products[0]['reference'] == 94
+                                            || $products[0]['reference'] == 82
+                                            || $products[0]['reference'] == 81
+                                            || $products[0]['reference'] == 80
+                                            || $products[0]['reference'] == 73
+                                            || $products[0]['reference'] == 70
+                                            || $products[0]['reference'] == 64
+                                            || $products[0]['reference'] == 60
+                                            || $products[0]['reference'] == 58)) {
                                         ?>
+                                            <option value="hombre">Hombre</option>
+                                        <?php } ?>
+
+                                        <?php
+                                        if (!$productkid) {
+                                        } else {
+                                            if (!($products[0]['reference'] == 96
+                                                || $products[0]['reference'] == 93
+                                                || $products[0]['reference'] == 92
+                                                || $products[0]['reference'] == 91
+                                                || $products[0]['reference'] == 90
+                                                || $products[0]['reference'] == 89
+                                                || $products[0]['reference'] == 88
+                                                || $products[0]['reference'] == 95
+                                                || $products[0]['reference'] == 94
+                                                || $products[0]['reference'] == 82
+                                                || $products[0]['reference'] == 81
+                                                || $products[0]['reference'] == 80
+                                                || $products[0]['reference'] == 73
+                                                || $products[0]['reference'] == 70
+                                                || $products[0]['reference'] == 64
+                                                || $products[0]['reference'] == 60
+                                                || $products[0]['reference'] == 58)) {
+                                        ?>
+                                                <option value="nino">Niño</option>
+                                            <?php }  ?>
+                                            <option value="nina">Niña</option>
+                                        <?php
+                                        } ?>
+
                                     </select>
                                     <p class="form-text text-muted">
-                                        <b>PeRa amiguis pide la talla que más utilizas en camiseta nacional <img src="<?= base_url().route_to('images_peradk') ?>/colombia.svg" alt="" style="width: 20px;">.</b>
+                                        <?php
+                                        if (!($products[0]['reference'] == 96
+                                            || $products[0]['reference'] == 93
+                                            || $products[0]['reference'] == 92
+                                            || $products[0]['reference'] == 91
+                                            || $products[0]['reference'] == 90
+                                            || $products[0]['reference'] == 89
+                                            || $products[0]['reference'] == 88
+                                            || $products[0]['reference'] == 95
+                                            || $products[0]['reference'] == 94
+                                            || $products[0]['reference'] == 82
+                                            || $products[0]['reference'] == 81
+                                            || $products[0]['reference'] == 80
+                                            || $products[0]['reference'] == 73
+                                            || $products[0]['reference'] == 70
+                                            || $products[0]['reference'] == 64
+                                            || $products[0]['reference'] == 60
+                                            || $products[0]['reference'] == 58)) { ?>
+                                            <b>Horma para Hombre y Mujer 🍐</b><br>
+                                        <?php
+                                        } else { ?>
+                                            <b>Horma exclusiva para Mujer y Niña🍐</b><br>
+                                        <?php
+                                        } ?>
                                     </p>
-                                    <input type="hidden" name="observation" value="">
-
                                 </div>
                                 <div class="col">
-                                    <select name="horma" class="form-control" required>
-                                        <option value="">Mujer - Hombre</option>
-                                        <option value="mujer">mujer</option>
-                                        <option value="hombre">hombre</option>
-                                    </select>
-                                    <p class="form-text text-muted">
-                                        <b>Horma para Hombre y Mujer 🍐</b><br>
 
-                                    </p>
+                                    <div id="sizes1" name="sizes1">
+                                    </div>
+
+
+                                    <input type="hidden" name="observation" value="">
+
                                 </div>
                             </div>
 
