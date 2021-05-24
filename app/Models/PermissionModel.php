@@ -14,8 +14,7 @@ class PermissionModel extends Model
     protected $useSoftDeletes = true;
     */
 
-    protected $allowedFields = [
-    ];
+    protected $allowedFields = [];
 
     /*
     protected $useTimestamps = false;
@@ -28,12 +27,20 @@ class PermissionModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function hasPermission($permission)
+    public function hasPermission($permission, $cedula = null)
     {
-        if(!$this->where('administrator_idadministrator',session()->idadministrator)->where('permission_idpermission',$permission)->where('active_permission',1)->first()){
-            return false;
-        }else{
-            return true;
+        if ($cedula == null) {
+            if (!$this->where('administrator_idadministrator', session()->idadministrator)->where('permission_idpermission', $permission)->where('active_permission', 1)->first()) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            if (!$this->where('administrator_idadministrator', $cedula)->where('permission_idpermission', $permission)->where('active_permission', 1)->first()) {
+                return false;
+            } else {
+                return true;
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ use App\Models\AdministratorModel;
 use App\Models\CityModel;
 use App\Models\OrderdetailsModel;
 use App\Models\OrderModel;
-
+use App\Models\PermissionModel;
 
 class Home extends BaseController
 {
@@ -61,17 +61,24 @@ class Home extends BaseController
                     'body' => 'Credeciales invalidas'
                 ])->withInput();
         }
-        session()->set([
-            'idadministrator' => $user['idadministrator'],
-            'admin_name' => $user['name_admin'],
-            'is_logged' => true,
-            'admin_surname' =>  $user['surname_admin'],
-            'admin_image' =>  $user['image_admin']
-        ]);
+        $mdlPermission = new PermissionModel();
 
-        return redirect()->route('admin_page_home');
+        if ($mdlPermission->hasPermission(1,$user['idadministrator'])) {
+            session()->set([
+                'idadministrator' => $user['idadministrator'],
+                'admin_name' => $user['name_admin'],
+                'is_logged' => true,
+                'admin_surname' =>  $user['surname_admin'],
+                'admin_image' =>  $user['image_admin']
+            ]);
+            return redirect()->route('admin_page_home');
+        }else{
+            return redirect()->back()
+            ->with('msg', [
+                'body' => 'No tienes permisos para entrar al modulo administrativo.'
+            ])->withInput();
+        }
     }
-
 
     public function logout()
     {
