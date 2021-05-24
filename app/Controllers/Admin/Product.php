@@ -56,7 +56,6 @@ class Product extends BaseController
 
     public function updateItemProducts()
     {
-
         //verificar si tiene permisos
         $mdlPermission = new PermissionModel();
 
@@ -67,23 +66,22 @@ class Product extends BaseController
                 'activeproduct' => 'required'
             ])) {
                 return redirect()->back()->with('error', [
-                    'title' => 'No pudo hacer los cambios!',
+                    'title' => 'No se pudo hacer los cambios!',
                     'body' => "Los datos no pasaron la validación, verifica los tipos de datos."
                 ]);
             }
-
             $data = [
-                'reference' => $this->request->getGetPost('reference'),
-                'category_idcategory' => $this->request->getGetPost('idcategory'),
-                'name_product' => $this->request->getGetPost('nameproduct'),
-                'active_product' => $this->request->getGetPost('activeproduct')
+                'reference' => $this->request->getPostGet('reference'),
+                'category_idcategory' => $this->request->getPostGet('idcategory'),
+                'name_product' => $this->request->getPostGet('nameproduct'),
+                'active_product' => $this->request->getPostGet('activeproduct')
             ];
             d($data);
             $modelProduct = new ProductModel();
-            $modelProduct->save($data);
+            $modelProduct->set($data)->where('reference', $this->request->getPostGet('reference'))->where('category_idcategory', $this->request->getPostGet('idcategory'))->update();
             return redirect()->back()->with('msg', [
                 'title' => 'Se efectuó!',
-                'body' => 'La referencia ' .  $this->request->getGetPost('reference') . ' ha cambiado.'
+                'body' => 'La referencia ' .  $this->request->getPostGet('reference') . ' ha cambiado.'
             ]);
         } else {
             return view('adminpage/structure/header')
@@ -131,10 +129,17 @@ class Product extends BaseController
                     'active_product' => 'si',
                     'image_product' => $newName . $ext
                 );
-                $modelProduct->insert($newProduct);
-                return redirect()->back()->with('msg', [
-                    'title' => 'Creado con Exito!',
-                    'body' => "El producto se creo correcatamente con la referencia $reference y categoria $category"
+                
+                if (!$modelProduct->where('reference', $reference)->where('category_idcategory', $category)->first()) {
+                    $modelProduct->insert($newProduct);
+                    return redirect()->back()->with('msg', [
+                        'title' => 'Creado con Exito!',
+                        'body' => "El producto se creo correcatamente con la referencia $reference y categoria $category"
+                    ]);
+                }
+                return redirect()->back()->with('error', [
+                    'title' => 'No pudo ser Creado con Exito!',
+                    'body' => "El producto no se pudo crear, ya existe."
                 ]);
             } else {
                 return redirect()->back()->with('error', [
