@@ -30,7 +30,7 @@
                                 foreach ($cart as $item) {
                                     echo
                                     '<tr>
-                                        <td>' . $item['product_category_idcategory'] . '</td>
+                                        <td>' . $item['name_category'] . '</td>
                                         <td>' . $item['product_reference'] . '</td>
                                         <td>' . $item['quantity_orderdetails'] . '</td>
                                         <td>$' . number_format($item['unit_price_orderdetails'] * $item['quantity_orderdetails']) . '</td>

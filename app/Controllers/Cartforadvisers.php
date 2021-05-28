@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Entities\Payments;
+use App\Models\CategoryModel;
 use App\Models\CityModel;
 use App\Models\DepartamentModel;
 use App\Models\OrderdetailsModel;
@@ -143,7 +144,7 @@ class Cartforadvisers extends BaseController
                     'payerFullName' => $BUYER_FULLNAME
                 ],
                 'reference' => $REFERENCE_CODE,
-                'cart' => $listofProducts,
+                'cart' => $this->generateListCart($listofProducts),
                 'flete' => $information['freight']
             ])
             . view('structure/footer');
@@ -192,5 +193,16 @@ class Cartforadvisers extends BaseController
         } else {
             return 0;
         }
+    }
+
+    public function generateListCart($listofProducts){
+        $mdlCategory = new CategoryModel();
+        $newlist = array();
+        foreach($listofProducts as $item){
+            $nameCategory = $mdlCategory->select('name_category')->where('idcategory',$item['product_category_idcategory'])->first();
+            $newArray=array_merge($item,$nameCategory);
+            array_push($newlist,$newArray);
+        }
+        return $newlist;
     }
 }
