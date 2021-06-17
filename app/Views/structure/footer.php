@@ -67,12 +67,12 @@
             <a href="<?= base_url() . route_to('warranty_policies') ?>"> Políticas Garantía</a>
         </div>
         <div class="credits">
-            
+
         </div>
     </div>
 </footer><!-- End Footer -->
 
-<a href="https://api.whatsapp.com/send?phone=573143377306" class="back-to-top"><i class="icofont-brand-whatsapp"></i></a> 
+<a href="https://api.whatsapp.com/send?phone=573143377306" class="back-to-top"><i class="icofont-brand-whatsapp"></i></a>
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->

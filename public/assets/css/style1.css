@@ -430,7 +430,7 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 72px;
+  padding-top: 2px;
 }
 
 #hero h1 {
@@ -488,17 +488,30 @@ h6 {
   color: #76b119;
 }
 
+#hero .btn-watch-video:visited i {
+  outline: none;
+}
+
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+#hero .video-mayorista {
+  width: 100%;
+  height: 32vh;
+  border-radius: 20px;
+}
 
 @media (max-width: 991px) {
+  #hero .video-mayorista {
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px;
+  }
   #hero {
     height: 100vh;
     text-align: center;
   }
   #hero .animated {
-   
   }
   #hero .hero-img {
     text-align: center;
@@ -1996,14 +2009,14 @@ button[type="submit"]:hover {
   padding: 0.3rem;
 }
 
-.close{
+.close {
   color: #76b119;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-.transparent{
+.transparent {
   border-color: transparent;
 }
