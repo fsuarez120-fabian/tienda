@@ -260,7 +260,7 @@
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
                         <a href="https://api.whatsapp.com/send?phone=573134848876" target="”_blank”">
-                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendapamplona.png" alt="" class="img-fluid">
+                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendapamplona1.jpeg" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                     <div class="icon-box">
                         <a href="https://api.whatsapp.com/send?phone=573232534285" target="”_blank”">
-                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendamedellin.png" alt="" class="img-fluid">
+                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendamedellin1.jpeg" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
@@ -278,7 +278,7 @@
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-box">
                         <a href="https://api.whatsapp.com/send?phone=573118144303" target="”_blank”">
-                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendacali.png" alt="" class="img-fluid">
+                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendacali1.jpeg" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
@@ -286,7 +286,7 @@
                 <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
                     <div class="icon-box">
                         <a href="https://api.whatsapp.com/send?phone=573107706098" target="”_blank”">
-                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendayopal.png" alt="" class="img-fluid">
+                            <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendayopal1.jpeg" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
