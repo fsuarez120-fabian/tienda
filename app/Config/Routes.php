@@ -40,11 +40,14 @@ $routes->get('/productos/(:alpha)', 'Product::viewproducts/$1', ['as' => 'show_p
 $routes->get('/camisetas', 'Product::listofshirts', ['as' => 'list_shirts']);
 $routes->get('/specials', 'Product::listofspecials', ['as' => 'list_specials']);
 //$routes->get('/cuerina', 'Product::listofcuerina', ['as' => 'list_cuerina']);
+$routes->get('/familia', 'Family::view_list_products', ['as' => 'view_list_products_family']);
+
+
 
 //routes of products detail
 $routes->get('/productos/clasicas/(:num)', 'Product::detailclassic/$1');
 $routes->get('/productos/tapabocas/(:num)', 'Product::detailproductssize/$1');
-$routes->get('/productos/pijamas/(:num)', 'Product::detailproductssize/$1'); 
+$routes->get('/productos/pijamas/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/jeans/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/bodysisas/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/bodylargas/(:num)', 'Product::detailproductssize/$1');
@@ -60,10 +63,14 @@ $routes->get('/productos/bodycuellotortuga/(:num)', 'Product::detailproductssize
 $routes->get('/productos/busos/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/kids/(:num)', 'Product::detailproductssize/$1');
 
+//routes of gropus of products
+$routes->get('/grupoproductos/familia/(:num)', 'Family::viewDetailGroupProduct/$1', ['as' => 'detail_group_family']);
+$routes->post('/addcartfamily', 'Family::addToShippingCart', ['as' => 'add_to_cart_family']);
+
 //route of purchase
 $routes->post('/carrito', 'Product::shoppingcart', ['as' => 'cart']);
 $routes->get('/carrito', 'Product::shoppingcart', ['as' => 'cart']);
-$routes->get('/datosenvio', 'Product::shippinginformation', ['as' => 'shippingingformation']); 
+$routes->get('/datosenvio', 'Product::shippinginformation', ['as' => 'shippingingformation']);
 $routes->post('/cities', 'City::getcities');
 $routes->get('/cities', 'City::getcities');
 $routes->post('/finalizarcompra', 'Product::finalizepurchase', ['as' => 'finalize']);
@@ -99,23 +106,23 @@ $routes->get('adminpage/login', 'Admin/Home::login', ['as' => 'admin_page_login'
 $routes->post('adminpage/login', 'Admin/Home::checklogin', ['as' => 'admin_page_check_login']);
 
 
-$routes->group('/adminpage', ['namespace' => 'App\Controllers\Admin' , 'filter' => 'auth'], function ($routes) {
+$routes->group('/adminpage', ['namespace' => 'App\Controllers\Admin', 'filter' => 'auth'], function ($routes) {
 	$routes->add('totalpedidos', 'Order::show_order', ['as' => 'admin_page_orders']);
-	$routes->add('pedidos', 'Order::showOrderWithStateFinal', ['as' => 'admin_page_orders_with_state_final']); 
-	$routes->add('', 'Home::index', ['as' => 'admin_page_home']); 
-	$routes->add('productos', 'Product::products', ['as' => 'admin_page_products']); 
+	$routes->add('pedidos', 'Order::showOrderWithStateFinal', ['as' => 'admin_page_orders_with_state_final']);
+	$routes->add('', 'Home::index', ['as' => 'admin_page_home']);
+	$routes->add('productos', 'Product::products', ['as' => 'admin_page_products']);
 	$routes->add('logout', 'Home::logout', ['as' => 'admin_page_logout']);
 	$routes->post('saveproducto', 'Product::createProduct', ['as' => 'admin_page_save_product']);
 	$routes->post('update', 'Product::updateItemProducts', ['as' => 'admin_page_update_item_products']);
 
 	//routes for cart for advisers
-	$routes->get('linkcartshopping', 'Cartforadvisers::viewCreateLink', ['as' => 'admin_page_view_create_link']); 
-	$routes->get('createlink', 'Cartforadvisers::createLink', ['as' => 'admin_page_create_link']); 
-	$routes->get('listlink', 'Cartforadvisers::viewListLinks', ['as' => 'admin_page_view_list_link']); 
-	$routes->post('deshabilitarlink', 'Cartforadvisers::disableLink', ['as' => 'admin_page_disableLink']); 
+	$routes->get('linkcartshopping', 'Cartforadvisers::viewCreateLink', ['as' => 'admin_page_view_create_link']);
+	$routes->get('createlink', 'Cartforadvisers::createLink', ['as' => 'admin_page_create_link']);
+	$routes->get('listlink', 'Cartforadvisers::viewListLinks', ['as' => 'admin_page_view_list_link']);
+	$routes->post('deshabilitarlink', 'Cartforadvisers::disableLink', ['as' => 'admin_page_disableLink']);
 
 	//fabiansuarez
-	$routes->post('msg', 'Inge::msg', ['as' => 'admin_page_msg_encripted']); 
+	$routes->post('msg', 'Inge::msg', ['as' => 'admin_page_msg_encripted']);
 });
 
 //routes for cart for advisers
