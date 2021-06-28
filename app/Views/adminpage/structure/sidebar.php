@@ -78,19 +78,6 @@
                         </p>
                     </a>
                 </li>
-
-                <li class="nav-header">PRODUCTOS</li>
-                <li class="nav-item">
-                    <a href="<?= base_url(route_to('admin_page_products')) ?>" class="nav-link">
-
-                        <i class="fas fa-pen nav-icon"></i>
-                        <p>
-                            Agregar Producto
-                        </p>
-                    </a>
-                </li>
-
-
                 <li class="nav-header">LINKS CARRITO DE COMPRAS</li>
                 <li class="nav-item">
                     <a href="<?= base_url(route_to('admin_page_view_create_link')) ?>" class="nav-link">
@@ -104,16 +91,29 @@
                     <a href="<?= base_url(route_to('admin_page_view_list_link')) ?>" class="nav-link">
                         <i class="fas fa-list nav-icon"></i>
                         <p>
-                            Listado de links 
+                            Listado de links
                         </p>
                     </a>
                 </li>
+                <li class="nav-header">PRODUCTOS</li>
+                <li class="nav-item">
+                    <a href="<?= base_url(route_to('admin_page_products')) ?>" class="nav-link">
 
+                        <i class="fas fa-pen nav-icon"></i>
+                        <p>
+                            Agregar Producto
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url(route_to('ap_family_list')) ?>" class="nav-link">
 
-
-
-
-
+                        <i class="fas fa-pen nav-icon"></i>
+                        <p>
+                            Familia
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -43,6 +43,7 @@ class Family extends BaseController
         //VERIFICA SI EXISTE LA REF TANTO EN SISA COMO EN PANTALONETA
         if (empty($product1) || empty($product2)) {
             echo "UNA DE LAS REFERENCIAS NO ESTA CREADA";
+            return false;
         }
 
         return view('structure/header')

@@ -14,7 +14,14 @@ class ReferencegroupModel extends Model
     protected $useSoftDeletes = true;
     */
 
-    protected $allowedFields = [];
+    protected $allowedFields = [
+        'id_reference_group',
+        'name_reference_group',
+        'active_reference_group',
+        'image_reference_group',
+        'score_reference_group',
+        'group_of_category_id_group_of_category',
+    ];
     /*
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

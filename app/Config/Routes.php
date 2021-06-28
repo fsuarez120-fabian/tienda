@@ -115,6 +115,10 @@ $routes->group('/adminpage', ['namespace' => 'App\Controllers\Admin', 'filter' =
 	$routes->post('saveproducto', 'Product::createProduct', ['as' => 'admin_page_save_product']);
 	$routes->post('update', 'Product::updateItemProducts', ['as' => 'admin_page_update_item_products']);
 
+	//routes for family
+	$routes->add('listafamilia', 'Family::viewListProducts', ['as' => 'ap_family_list']);
+	$routes->post('savereffamilia', 'Family::createReference', ['as' => 'save_family_new_reference']);
+
 	//routes for cart for advisers
 	$routes->get('linkcartshopping', 'Cartforadvisers::viewCreateLink', ['as' => 'admin_page_view_create_link']);
 	$routes->get('createlink', 'Cartforadvisers::createLink', ['as' => 'admin_page_create_link']);
