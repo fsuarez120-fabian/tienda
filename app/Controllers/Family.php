@@ -18,7 +18,7 @@ class Family extends BaseController
         return view('structure/header')
             . view('structure/navbarcontent')
             . view('contents/group_products/list_references', [
-                'products' => $mdlReferenceGroup->where('group_of_category_id_group_of_category', 1)->findAll()
+                'products' => $mdlReferenceGroup->where('group_of_category_id_group_of_category', 1)->orderBy('score_reference_group','desc')->findAll()
             ])
             . view('structure/footer');
     }
