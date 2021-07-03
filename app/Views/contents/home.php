@@ -40,18 +40,14 @@
 
             <div class="row">
 
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('view_list_products_family') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/familia.jpeg" alt="familia"></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'clasicas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/clasica.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'plataformas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/plataforma.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_specials') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/estrellaspiedritas.jpeg" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('view_list_products_family') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/familia.jpg" alt="familia"></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_shirts') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/camisetas.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'kids') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/kids.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url()  . route_to('show_produts', 'tapabocas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tapabocas.jpeg" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/jeans.jpeg" alt=""></a></div>
-
-
-
-
                 <div class="d-none d-lg-block d-xl-block w-100"></div>
 
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/sisa.jpeg" alt=""></a></div>
