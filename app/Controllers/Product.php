@@ -463,6 +463,8 @@ class Product extends BaseController
 					'<p class="form-text text-muted">
 					<b>PeRa amiguis pide la talla que más utilizas en camiseta nacional <img src="' . base_url() . route_to('images_peradk') . '/colombia.svg" alt="" style="width: 20px;">. Recuerda que lo puedes usar como prenda casual o traje de baño.
 					<br>Nota: </b>los PeRa Bodys por ser prenda intima de uso personal, no tienen cambio.
+					<br><b>Talla para niñas </b>(0 a la 16).
+					<br><b>Talla para adulto </b>(XS a la XXXL).
 				</p>';
 				break;
 			case 4:
@@ -473,6 +475,8 @@ class Product extends BaseController
 					'<p class="form-text text-muted">
 								<b>PeRa amiguis pide la talla que más utilizas en camiseta nacional. Recuerda que lo puedes usar como prenda casual o traje de baño.
 								<br>Nota: </b>los PeRa Bodys por ser prenda intima de uso personal, no tienen cambio.
+								<br><b>Talla para niñas </b>(0 a la 16).
+								<br><b>Talla para adulto </b>(XS a la XXXL).
 							</p>';
 				break;
 			case 7:
