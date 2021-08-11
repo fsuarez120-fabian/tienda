@@ -106,8 +106,11 @@
                                                     break;
 
                                                 case 4:
-                                                    echo  ' <option value="30">30</option>
+                                                    echo  ' <option value="28">28</option>
+                                                            <option value="30">30</option>
+                                                            <option value="32">32</option>
                                                             <option value="34">34</option>
+                                                            <option value="36">36</option>
                                                             <option value="38">38</option>
                                                     ';
                                                     break;
