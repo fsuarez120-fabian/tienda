@@ -204,17 +204,6 @@
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="https://peradk.com/public/archivos/pera_leggings.pdf" target="”_blank”">
-                                    <div class="address">
-                                        <i class="icofont-pear"></i>
-                                        <h4>Cat&aacute;logo PeRa Leggings</h4>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_pijamas.pdf" target="”_blank”">
                                     <div class="address">
                                         <i class="icofont-pear"></i>
@@ -223,7 +212,8 @@
                                 </a>
                             </div>
 
-
+                        </div>
+                        <div class="row">
                             <div class="col">
                                 <a href="https://peradk.com/public/archivos/pera_familia.pdf" target="”_blank”">
                                     <div class="address">

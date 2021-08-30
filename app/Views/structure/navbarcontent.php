@@ -25,7 +25,7 @@
                                 <li><a href="<?= base_url() . route_to('show_produts', 'tapabocas') ?>">PeRa Tapabocas</a></li>
                                 <li><a href="<?= base_url() . route_to('show_produts', 'pijamas') ?>">PeRa Pijama</a></li>
                                 <li><a href="<?= base_url() . route_to('list_shirts') ?>">PeRa Camisetas</a></li>
-                                <li><a href="<?= base_url() . route_to('show_produts', 'leggings') ?>">PeRa Leggings</a></li>
+                                <!-- <li><a href="<?= base_url() . route_to('show_produts', 'leggings') ?>">PeRa Leggings</a></li> -->
                                 <li><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>">PeRa Jeans</a></li>
                                 <li><a href="<?= base_url() . route_to('show_produts', 'bodycuellotortuga') ?>">PeRa Body Cuello Tortuga</a></li>
                                 <li><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>">PeRa Body Manga Larga</a></li>
