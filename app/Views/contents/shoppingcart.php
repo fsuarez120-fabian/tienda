@@ -6,6 +6,8 @@
         </div>
         <div class="row">
             <div class="col-lg-7">
+                <img src="<?php echo base_url('public/pictures/peradk'); ?>/ivaday.jpeg" alt="dfsd" class="img-fluid">
+                <br>
                 <?php
 
                 if (count($cart) <= 0) {
@@ -118,7 +120,7 @@
                         <br>
                         <b>PeRa Amiguis para tu comodidad tu env&iacute;o ser&aacute; despachado por</b>
                         <img src="<?php echo base_url('public/pictures/peradk'); ?>/servientrega.png" alt="" class="img-fluid col-7">
-                        
+
                         <p><br>Trayecto nacional o zonal, tiempo de entrega de 2 a 3 días h&aacute;biles </p>
                         <p>Trayecto especial, tiempo de entrega 4 a 5 d&iacute;as h&aacute;biles</p>
                     </div>
