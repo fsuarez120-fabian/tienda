@@ -12,7 +12,7 @@ use App\Models\ServientregaModel;
 use App\Models\ShippinginfoModel;
 use App\Models\TransactionModel;
 
-class Cartforadvisers extends BaseController 
+class Cartforadvisers extends BaseController
 {
     public function cartReference($reference)
     {
@@ -76,7 +76,7 @@ class Cartforadvisers extends BaseController
             'name_department' => $cityfound[0]['name_department'],
             'name_city' => $cityfound[0]['name_city']
         );
-       
+
 
         //Se trae la informacion del pedido que esta en la base de datos.
         $modelOrder = new OrderModel();
@@ -86,7 +86,7 @@ class Cartforadvisers extends BaseController
         }
         $order['freight_price_order'] = $information['freight'];
         $order['total_price_order'] = $order['product_price_order'] + $order['freight_price_order'];
-        
+
         $modelOrder->update($REFERENCE, $order);
 
         //Se modifica los datos de envio en la tabla ya que estos deben estar vacios.
@@ -109,8 +109,8 @@ class Cartforadvisers extends BaseController
         //CONSTANTES WEBCHECKOUT PAYU
         $REFERENCE_CODE =  $REFERENCE;
         $AMOUNT = $order['total_price_order'];
-        $TAX = $this->generateTax($listofProducts)['Tax'];
-        $TAX_RETURN_BASE = $this->generateTax($listofProducts)['TaXReturnBase'];
+        $TAX = 0; //$this->generateTax($listofProducts)['Tax'];
+        $TAX_RETURN_BASE = 0; //$this->generateTax($listofProducts)['TaXReturnBase'];
         $BUYEREMAIL = $info['email_shippinginfo'];
         $BUYER_FULLNAME =  $info['name_shippinginfo'] . ' ' . $info['surname_shippinginfo'];
         $PAYER_DOCUMENT = $info['number_id_shippinginfo'];
@@ -195,13 +195,14 @@ class Cartforadvisers extends BaseController
         }
     }
 
-    public function generateListCart($listofProducts){
+    public function generateListCart($listofProducts)
+    {
         $mdlCategory = new CategoryModel();
         $newlist = array();
-        foreach($listofProducts as $item){
-            $nameCategory = $mdlCategory->select('name_category')->where('idcategory',$item['product_category_idcategory'])->first();
-            $newArray=array_merge($item,$nameCategory);
-            array_push($newlist,$newArray);
+        foreach ($listofProducts as $item) {
+            $nameCategory = $mdlCategory->select('name_category')->where('idcategory', $item['product_category_idcategory'])->first();
+            $newArray = array_merge($item, $nameCategory);
+            array_push($newlist, $newArray);
         }
         return $newlist;
     }
