@@ -114,6 +114,17 @@
                         </p>
                     </a>
                 </li>
+
+                <li class="nav-header">SORTEO MOTO</li>
+                <li class="nav-item">
+                    <a href="<?= base_url(route_to('index_codigo_moto')) ?>" class="nav-link">
+
+                        <i class="fas fa-code"></i>
+                        <p>
+                            Codigos
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
