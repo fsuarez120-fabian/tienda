@@ -20,13 +20,6 @@
                     <form method="post" action="<?= base_url() . route_to('create_codigos') ?>">
                         <div class="form-group">
                             <label>
-                                Id Pedido
-                            </label>
-                            <input name="idpedido" value="<?= old('idpedido') ?>" type="text" class="form-control" placeholder="ej. 1098823092-2021-07-30-1627649422-2" />
-                            <p style="color: red;"><?= session('errors.idpedido') ?></p>
-                        </div>
-                        <div class="form-group">
-                            <label>
                                 Cedula Cliente
                             </label>
                             <input name="identificacion" value="<?= old('identificacion') ?>" type="text" class="form-control" placeholder="Identificación" />
@@ -66,7 +59,6 @@
                                     <tr>
                                         <th style="width: 10px">#</th>
                                         <th>Codigo</th>
-                                        <th>Id Pedido</th>
                                         <th>Cedula Cliente</th>
                                         <th>Creado</th>
                                         <th>Activo</th>
@@ -80,7 +72,6 @@
                                         <tr>
                                             <td><?= $num ?></td>
                                             <td><b><?= $code['codigo_codigo'] ?></b></td>
-                                            <td><?= $code['id_pedido'] ?></td>
                                             <td><?= $code['cliente_codigo'] ?></td>
                                             <td><?= $code['created_at_codigo'] ?></td>
                                             <td>

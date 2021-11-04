@@ -95,7 +95,6 @@ $routes->get('/requestpayment', 'Home::requestpayment');
 $routes->add('/confirmationpage', 'Home::confirmationpagepayment');
 
 //routes for sorteos
-$routes->get('/sorteomoto', 'Sorteo::sorteoMoto', ['as' => 'home_sorteo']);
 $routes->post('/sorteomoto', 'Sorteo::registerSorteo', ['as' => 'form_sorteo']);
 
 //route of destroy session

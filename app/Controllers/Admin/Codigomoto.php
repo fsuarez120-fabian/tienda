@@ -26,13 +26,11 @@ class Codigomoto extends BaseController
     public function getInfoForm()
     {
         if (!$this->validate([
-            'idpedido' => 'required',
             'identificacion' => 'required',
             'cantidad' => 'required|numeric'
         ])) {
             return redirect()->to(base_url() . route_to('index_codigo_moto'))->with('errors', $this->validator->getErrors())->withInput();
         }
-        $idPedido = $this->request->getPost('idpedido');
         $identification = $this->request->getPost('identificacion');
         $cantidad = $this->request->getPost('cantidad');
 
@@ -40,7 +38,6 @@ class Codigomoto extends BaseController
             $this->mdlCodigosSorteo->insert([
                 'id_codigosmoto' => '',
                 'codigo_codigo' => uniqid(),
-                'id_pedido' => $idPedido,
                 'by_codigo' => session()->get('idadministrator'),
                 'cliente_codigo' => $identification,
                 'active' => false,
