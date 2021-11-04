@@ -6,8 +6,6 @@
         </div>
         <div class="row">
             <div class="col-lg-7">
-                <img src="<?php echo base_url('public/pictures/peradk'); ?>/ivaday.jpeg" alt="dfsd" class="img-fluid">
-                <br>
                 <?php
 
                 if (count($cart) <= 0) {

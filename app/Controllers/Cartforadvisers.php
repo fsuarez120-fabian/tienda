@@ -109,8 +109,8 @@ class Cartforadvisers extends BaseController
         //CONSTANTES WEBCHECKOUT PAYU
         $REFERENCE_CODE =  $REFERENCE;
         $AMOUNT = $order['total_price_order'];
-        $TAX = 0; //$this->generateTax($listofProducts)['Tax'];
-        $TAX_RETURN_BASE = 0; //$this->generateTax($listofProducts)['TaXReturnBase'];
+        $TAX = $this->generateTax($listofProducts)['Tax'];
+        $TAX_RETURN_BASE = $this->generateTax($listofProducts)['TaXReturnBase'];
         $BUYEREMAIL = $info['email_shippinginfo'];
         $BUYER_FULLNAME =  $info['name_shippinginfo'] . ' ' . $info['surname_shippinginfo'];
         $PAYER_DOCUMENT = $info['number_id_shippinginfo'];
