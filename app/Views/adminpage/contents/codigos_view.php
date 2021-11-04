@@ -20,23 +20,23 @@
                     <form method="post" action="<?= base_url() . route_to('create_codigos') ?>">
                         <div class="form-group">
                             <label>
-                                Cedula Cliente
+                                Cedula Cliente <a style = "color:red;">recuerde SIN puntos ni caracter especiales</a>
                             </label>
-                            <input name="identificacion" value="<?= old('identificacion') ?>" type="text" class="form-control" placeholder="Identificación" />
+                            <input name="identificacion" value="<?= old('identificacion') ?>" type="text" class="form-control" placeholder="Identificaci贸n" />
                             <p style="color: red;"><?= session('errors.identificacion') ?></p>
                         </div>
                         <div class="form-group">
                             <label>
-                                Total del pedido
+                                Total del pedido <a style = "color:red;">recuerde SIN FLETE</a>
                             </label>
-                            <input name="cantidad" value="<?= old('cantidad') ?>" type="number" class="form-control" placeholder="$" />
+                            <input name="cantidad" value="<?= old('cantidad') ?>" type="number" class="form-control" placeholder="$ recuerde SIN FLETE" />
                             <p style="color: red;"><?= session('errors.cantidad') ?></p>
                         </div>
                         <div class="form-group">
                             <label>
                                 Linea Telefonica
                             </label>
-                            <input name="numero" value="<?= old('numero') ?>" type="number" class="form-control" placeholder="Telefono" />
+                            <input name="numero" value="<?= old('numero') ?>" type="text" class="form-control" placeholder="Telefono" />
                             <p style="color: red;"><?= session('errors.numero') ?></p>
                         </div>
                         <button type="submit" class="btn btn-primary">
@@ -47,7 +47,7 @@
                 <div class="col-md-8">
                     <?php if (session('msg')) : ?>
                         <div class="alert alert-success alert-dismissible">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                             <h5><i class="icon fas fa-check"></i> Alerta!</h5>
                             <?= session('msg.body') ?>
                         </div>
