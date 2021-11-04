@@ -41,7 +41,7 @@
                             </div>
 
                             <div style="margin-bottom: 0;" class="checkbox">
-                                Aplican <a href="#">t&eacute;rminos y condiciones.</a>
+                                Aplican <a href="https://peradk.com/public/archivos/Terminos_Condiciones_Sorteo.pdf">t&eacute;rminos y condiciones.</a>
                             </div>
 
                             <div class="text-center">

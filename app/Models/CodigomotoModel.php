@@ -18,7 +18,8 @@ class CodigomotoModel extends Model
         'created_at_codigo',
         'updated_at_codigo',
         'active',
-        'ip_codigo'
+        'ip_codigo',
+        'phone_codigo'
     ];
     protected $useTimestamps = true;
     protected $createdField  = 'created_at_codigo';

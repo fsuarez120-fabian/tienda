@@ -32,6 +32,13 @@
                             <input name="cantidad" value="<?= old('cantidad') ?>" type="number" class="form-control" placeholder="$" />
                             <p style="color: red;"><?= session('errors.cantidad') ?></p>
                         </div>
+                        <div class="form-group">
+                            <label>
+                                Linea Telefonica
+                            </label>
+                            <input name="numero" value="<?= old('numero') ?>" type="number" class="form-control" placeholder="Telefono" />
+                            <p style="color: red;"><?= session('errors.numero') ?></p>
+                        </div>
                         <button type="submit" class="btn btn-primary">
                             Generar
                         </button>
@@ -60,6 +67,7 @@
                                         <th style="width: 10px">#</th>
                                         <th>Codigo</th>
                                         <th>Cedula Cliente</th>
+                                        <th>Telefono</th>
                                         <th>Creado</th>
                                         <th>Activo</th>
                                     </tr>
@@ -73,6 +81,7 @@
                                             <td><?= $num ?></td>
                                             <td><b><?= $code['codigo_codigo'] ?></b></td>
                                             <td><?= $code['cliente_codigo'] ?></td>
+                                            <td><?= $code['phone_codigo'] ?></td>
                                             <td><?= $code['created_at_codigo'] ?></td>
                                             <td>
                                                 <?php if ($code['active'] == true) : ?>

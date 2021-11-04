@@ -27,10 +27,12 @@ class Codigomoto extends BaseController
     {
         if (!$this->validate([
             'identificacion' => 'required',
-            'cantidad' => 'required|numeric'
+            'cantidad' => 'required|numeric',
+            'numero' => 'required'
         ])) {
             return redirect()->to(base_url() . route_to('index_codigo_moto'))->with('errors', $this->validator->getErrors())->withInput();
         }
+        $phone = $this->request->getPost('numero');
         $identification = $this->request->getPost('identificacion');
         $cantidad = $this->request->getPost('cantidad');
 
@@ -41,7 +43,8 @@ class Codigomoto extends BaseController
                 'by_codigo' => session()->get('idadministrator'),
                 'cliente_codigo' => $identification,
                 'active' => false,
-                'ip_codigo' => null
+                'ip_codigo' => null,
+                'phone_codigo' => $phone
             ]);
         }
 

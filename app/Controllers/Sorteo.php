@@ -13,14 +13,6 @@ class Sorteo extends BaseController
         $this->mdlCode = new CodigomotoModel();
     }
 
-    public function sorteoMoto()
-    {
-        return view('sorteos/headersorteo')
-            . view('sorteos/navbarsorteo')
-            . view('sorteos/contentsorteo')
-            . view('sorteos/footersorteo');
-    }
-
     public function registerSorteo()
     {
         //validaciones de los campos
