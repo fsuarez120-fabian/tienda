@@ -115,7 +115,7 @@
                     </div>
 
                     <div class="text-center">
-                        <br>
+                        <p><b>Tiempo de producción 2 días hábiles adicional el tiempo de env&iacute;o, por parte de la transportadora 🍐💖</b></p>
                         <b>PeRa Amiguis para tu comodidad tu env&iacute;o ser&aacute; despachado por</b>
                         <img src="<?php echo base_url('public/pictures/peradk'); ?>/servientrega.png" alt="" class="img-fluid col-7">
 

@@ -48,7 +48,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     PARTICIPAR
                                 </button>
-                                <a href="https://www.youtube.com/watch?v=BIrhmzL_bdA" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true">Como participar? <i class="icofont-play-alt-2"></i></a>
+                                <a href="https://www.youtube.com/watch?v=0wwONOCrWiw" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true">Como participar? <i class="icofont-play-alt-2"></i></a>
                             </div>
 
                         </form>

@@ -61,7 +61,7 @@
                 ?>
 
                 <div class="text-center">
-                    <br>
+                    <p><b>Tiempo de producción 2 días hábiles adicional el tiempo de env&iacute;o, por parte de la transportadora 🍐💖</b></p>
                     <b>PeRa Amiguis para tu comodidad tu env&iacute;o ser&aacute; despachado por</b>
                     <img src="<?php echo base_url('public/pictures/peradk'); ?>/servientrega.png" alt="" class="img-fluid col-7">
 
@@ -83,7 +83,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <?php
-                                
+
                                 if (count($transactions) > 0) {
                                     echo '<h1>ESTADO:</h1>';
                                     foreach ($transactions as $trans) {
@@ -102,7 +102,6 @@
                                 } else if ($order['state_order'] == 'DISABLED') {
                                     echo '<h1>ESTADO:</h1>';
                                     echo '<h3>Link Deshabilitado, ponte en contacto con tu asesor.</h3>';
-                                   
                                 } else {
                                 ?>
                                     <h3>Datos de Env&iacute;o</h3>
