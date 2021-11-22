@@ -22,7 +22,7 @@
                             <label>
                                 Cedula Cliente <a style = "color:red;">recuerde SIN puntos ni caracter especiales</a>
                             </label>
-                            <input name="identificacion" value="<?= old('identificacion') ?>" type="text" class="form-control" placeholder="Identificaci贸n" />
+                            <input name="identificacion" value="<?= old('identificacion') ?>" type="text" class="form-control" placeholder="Identificación" />
                             <p style="color: red;"><?= session('errors.identificacion') ?></p>
                         </div>
                         <div class="form-group">
@@ -47,7 +47,7 @@
                 <div class="col-md-8">
                     <?php if (session('msg')) : ?>
                         <div class="alert alert-success alert-dismissible">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                             <h5><i class="icon fas fa-check"></i> Alerta!</h5>
                             <?= session('msg.body') ?>
                         </div>

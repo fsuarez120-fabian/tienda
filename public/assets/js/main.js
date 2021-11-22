@@ -5,7 +5,7 @@
  * License: https://bootstrapmade.com/license/
  */
 var getUrl = window.location;
-var base_url = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+var base_url = 'https://www.tienda.peradk.com';
 
 !(function ($) {
   "use strict";

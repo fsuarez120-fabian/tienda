@@ -56,6 +56,7 @@ class Product extends BaseController
 
     public function updateItemProducts()
     {
+
         //verificar si tiene permisos
         $mdlPermission = new PermissionModel();
 

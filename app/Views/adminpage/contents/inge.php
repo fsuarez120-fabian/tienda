@@ -34,7 +34,7 @@
                                 <div class="letra">&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;</div>
                             </div>
                             <div class="text-justify">
-                                <div class="letra"> <br> Hola corazón ¿cómo estás?,</div>
+                                <div class="letra"> <br> Hola corazón ¿cómo estás?</div>
 
 
                                 <div class="letra">Primero no se ni porque hice esto, jejejejejeeee Me estoy pasando de cursi &#128584;</div>
@@ -43,10 +43,10 @@
                                 <div class="letra">Amo esa sonrisa que sale de ti cada vez que hago algo estúpido, amo cuando siento que tus ojos verdes no ven nada más que a mí, amo estar en paz a tu lado cuando me hablas y estas conmigo. &#128586;</div>
 
                                 <div class="letra">¿Sabes? &#128580; He aprendido que no se necesita demasiado tiempo para saber querer a una persona. Y cuando redacto estas palabras para ti mi leoncita es como si describiera a la persona más maravillosa de este mundo!! ¿Y sabes por qué? PORQUE ME ENCANTAS, así de simple.&#128076;&#127995;</div>
-                                <div class="letra">¿y sabes que quiero? Quiero enamorarte todos los días, sacarte siempre una sonrisa con mis bobadas, tener siempre un beso tuyo o un abrazo, quiero que a mi lado te sientas protegida, que a pesar de todas las cosas me sientas como un apoyo, quiero ser confidente en toda, quiero ayudarte en todo lo que me necesites, quiero que seas feliz, quiero muchas aventuras y locuras juntos. Yo se que no tengo muchas cosas que decirte ni soy hombre de muchas ideas pero mis sentimientos son sinceros y de verdad espero siempre confíes en mí, corazón. &#128536; &#10084;&#65039; </div>
+                                <div class="letra">¿Y sabes que quiero? Quiero enamorarte todos los días, sacarte siempre una sonrisa con mis bobadas, tener siempre un beso tuyo o un abrazo, quiero que a mi lado te sientas protegida, que a pesar de todas las cosas me sientas como un apoyo, quiero ser confidente en todo, quiero ayudarte en todo lo que me necesites, quiero que seas feliz, quiero muchas aventuras y locuras juntos. Yo se que no tengo muchas cosas que decirte ni soy hombre de muchas ideas pero mis sentimientos son sinceros y de verdad espero siempre confíes en mí corazón. &#128536; &#10084;&#65039; </div>
 
                                 <div class="letra">Podría decirte tantas cosas…. Pero si te fijas en la forma que hoy te miraba a medio día, ya deberías saber todo y estas palabras estarían sobrando.</div>
-                                <div class="letra">Hoy leí una frase que me acordó tanto de ti Mario Benedetti “…te quiero como para escuchar tu risa toda la noche y dormir en tu pecho, sin sombras ni fantasmas, te quiero como para no soltarte jamás”. De verdad Eliana gracias por todos esos momentos que me has regalado. Contigo me siendo demasiado feliz, fuiste, eres y serás mi mas linda casualidad corazón.</div>
+                                <div class="letra">Hoy leí una frase que me acordó tanto de ti Mario Benedetti “…te quiero como para escuchar tu risa toda la noche y dormir en tu pecho, sin sombras ni fantasmas, te quiero como para no soltarte jamás”. De verdad Eliana gracias por todos esos momentos que me has regalado. Contigo me siento demasiado feliz, fuiste, eres y serás mi mas linda casualidad corazón.</div>
                             </div>
 
                             <div class="letra text-center">
@@ -103,13 +103,14 @@
                             <div class="text-justify">
                                 <div class="letra">
                                     &#128536; &#128571;Mi amor cuando te digo que te quiero es de verdad, y quisiera tener todo contigo, espero que todo nos salga super bien y que salgamos adelante en esto tan bonito de los dos, espero que siempre recuerdes esto y de este ingeniero lokko que te quiere con todo pero con todo el corazon.&#128536;
-                                    <br> &#129392;&#129392;Solo quiero que seamos felices y que no importa si es a escondidas o que la demas gente hable. Ssolo nosotros dos: tu y yo, sabemos lo lindo que ha sido todo.
+                                    <br> &#129392;&#129392;Solo quiero que seamos felices y que no importa si es a escondidas o que la demas gente hable. Solo nosotros dos: tu y yo, sabemos lo lindo que ha sido todo.
                                     <br> &#128571; Gracias mi leoncita por compartir conmigo tantos momentos y cosas lindas.&#128536;
 
                                 </div>
                             </div>
                             <div class="text-center">
                                 <br><br>&#128150;&#128150;&#128150;&#128150;&#128150;FESG&#128150;&#128150;&#128150;&#128150;&#128150;
+                                <br>TE QUIERO MUCHISIMO MIS OJITOS!!!
                                 <br> <br> &#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140;&#128140; &#128140; &#128140; &#128140; &#128140; &#128140; &#128140; &#128140; &#128140;
                             </div>
                             <br>

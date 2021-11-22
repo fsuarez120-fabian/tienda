@@ -1,8 +1,8 @@
 var getUrl = window.location;
 var base_urla =
-  getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split("/")[1];
+ 'https://www.tienda.peradk.com';
 
-//TRAER LAS CIUDADES DESDE LA BASE DE DATOS
+//TRAER LAS TALLAS DESDE LA BASE DE DATOS
 
 $(document).ready(function () {
   reloadsizes();
