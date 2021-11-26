@@ -4,7 +4,7 @@
 
         <h1 class="logo mr-auto">
             <a href="<?php echo base_url() ?> ">
-                <img src="<?php echo base_url() ?>/public/pictures/peradk/logo.png" alt="" class="img-fluid">
+                <img src="<?php echo base_url() ?>/public/pictures/peradk/logo1.png" alt="" class="img-fluid">
             </a>
         </h1>
 
@@ -39,14 +39,15 @@
                         <li><a href="<?= base_url('/productos/rizos/1') ?>">PeRa Rizos</a></li>
                     </ul>
                 </li>
-                <li><a href="<?php echo base_url('#team'); ?>">Nosotros</a></li>
                 <li><a href="<?php echo base_url('#stores'); ?>">Tiendas</a></li>
                 <li><a href="<?php echo base_url('#contact'); ?>">Cont&aacute;ctenos</a></li>
                 <li><a href="<?php echo base_url('#catalogs'); ?>">Catálogos</a></li>
             </ul>
         </nav><!-- .nav-menu -->
 
-        <a href="<?= base_url() . route_to('cart') ?>" class="get-started-btn scrollto">Carrito de Compras <?php if(isset($_SESSION['shoppingcart'])){echo '('.count($_SESSION['shoppingcart']).')';} ?></a>
+        <a href="<?= base_url() . route_to('cart') ?>" class="get-started-btn scrollto">Carrito de Compras <?php if (isset($_SESSION['shoppingcart'])) {
+                                                                                                                echo '(' . count($_SESSION['shoppingcart']) . ')';
+                                                                                                            } ?></a>
 
     </div>
 </header><!-- End Header -->

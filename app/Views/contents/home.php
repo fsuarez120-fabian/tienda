@@ -12,32 +12,31 @@
 
             <div class="row">
 
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'clasicas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/clasica.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'plataformas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/plataforma.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_specials') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/estrellaspiedritas.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('view_list_products_family') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/familia.jpg" alt="familia"></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_shirts') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/camisetas.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'kids') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/kids.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url()  . route_to('show_produts', 'tapabocas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tapabocas.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/jeans.jpeg" alt=""></a></div>
-                <div class="d-none d-lg-block d-xl-block w-100"></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'clasicas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/clasicas.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'plataformas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/plataformas.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_specials') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/estrellaspiedritas.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('view_list_products_family') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/familia.png" alt="familia"></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_shirts') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/camisetas.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'kids') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/kids.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url()  . route_to('show_produts', 'tapabocas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tapabocas.png" alt=""></a></div>
 
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/sisa.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/larga.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodycuellotortuga') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/cuellotortuga.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pantaloneta.jpeg" alt=""></a></div>
+                <div class="d-none d-lg-block d-xl-block w-100"></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/jeans.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/sisa.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/larga.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodycuellotortuga') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tortuga.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pantalonetas.png" alt=""></a></div>
                 <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'leggings') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/leggings.jpeg" alt=""></a></div> -->
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'busos') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/busoscaballero.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pijamas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pijamas.jpeg" alt=""></a></div>
+                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'busos') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/busoscaballero.jpeg" alt=""></a></div> -->
+                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pijamas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pijamas.jpeg" alt=""></a></div> -->
                 <!--<div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/medias/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/medias.jpeg" alt=""></a></div>-->
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/rizos/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/rizo.jpeg" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="https://peradk.com/lk/mi-cartilla-pera-d-k/"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/cartilla.jpeg" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/rizos/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/rizos.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="https://peradk.com/lk/mi-cartilla-pera-d-k/"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/cartilla.png" alt=""></a></div>
 
             </div>
 
         </div>
     </section><!-- End Productos Section -->
-
 
     <!-- ======= Catalogs Section ======= -->
     <section id="catalogs" class="contact">
@@ -217,11 +216,11 @@
 
                 </div>
                 <div class="col-md-8">
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="icon-box">
+                            <div class="icon-box text-center">
                                 <a href="https://api.whatsapp.com/send?phone=573134848876" target="”_blank”">
-                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendapamplona2.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendapamplona4.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
@@ -229,7 +228,7 @@
                         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                             <div class="icon-box">
                                 <a href="https://api.whatsapp.com/send?phone=573232534285" target="”_blank”">
-                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendamedellin2.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendamedellin4.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
@@ -238,7 +237,7 @@
                         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                             <div class="icon-box">
                                 <a href="https://api.whatsapp.com/send?phone=573118144303" target="”_blank”">
-                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendacali2.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendacali4.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
@@ -265,52 +264,15 @@
 
             <div class="row">
                 <div class="col-lg-9 text-center text-lg-left">
-                    <h3>PeRa D.K</h3>
+                    <h3>PERA</h3>
                 </div>
                 <div class="col-lg-3 cta-btn-container text-center">
-                    <a class="cta-btn align-middle">Nosotros</a>
+                    <a href="#about" class="cta-btn align-middle">Productos</a>
                 </div>
             </div>
 
         </div>
     </section><!-- End Cta Section -->
-
-    <!-- ======= Nosotros Section ======= -->
-    <section id="team" class="team section-bg">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Nosotros</h2>
-
-                <p1>Hola PeRa Amigos!
-
-                    Somos David y Kathe creadores de PeRa D.K. 🍐 <br>Fabricamos las Alpargatas y prendas m&aacute;s c&oacute;modas con insumos y mano de obra 100% Colombiana de alta calidad. Estamos ubicados en Pamplona Norte de Santander y hacemos env&iacute;os seguros a cualquier lugar del mundo.<br>
-
-                    Nuestro prop&oacute;sito de vida es inspirar a otras personas a emprender y creer en sus sueños. Estamos seguros que cuando uses algunos de nuestros PeRa Productos vas a sentir la felicidad y la magia con que est&aacute;n elaborados.<br>
-
-                    Gracias por Soñar Junto Nosotros y estamos para Servirte Siempre. Te PeRa Queremos 🤍</p1>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="<?php echo base_url() ?>/public/pictures/peradk/nosotros1.jpg" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="<?php echo base_url() ?>/public/pictures/peradk/nosotros2.jpg" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-        </div>
-    </section><!-- End Nosotros Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

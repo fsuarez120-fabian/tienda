@@ -5,17 +5,19 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h4>Gracias por Soñar Junto a Nosotros. <br>Te PeRa Queremos</h4>
+                    <h4>Gracias por Soñar Junto a Nosotros.<br>Te PERA Queremos</h4>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer-top" style="background: url('<?php echo base_url() ?>/public/pictures/peradk/fondogris.jpg'); background-size: cover;">
+    <div class="footer-top" style="background: url('<?php echo base_url() ?>/public/pictures/peradk/fondogris1.jpg'); background-size: cover;">
         <div class="container">
             <div class="row">
+                <div class="col-lg-3 ">
 
-                <div class="col-lg-4 col-md-6 col-sm-6 footer-links">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 footer-links">
                     <h4>Síguenos</h4>
 
                     <div class="social-links mt-3">
@@ -24,18 +26,17 @@
                         <a href="https://www.youtube.com/channel/UCzDDdriOEn0acgY0AgHdNLA" class="twitter"><i class="bx bxl-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 footer-links">
+                <div class="col-lg-3 col-md-4 col-sm-6 footer-links">
                     <h4>Frecuentes</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('#hero') ?>">Home</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('#about') ?>">Productos</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('#team') ?>">Nosotros</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('#stores') ?>">Tiendas</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('#contact') ?>">Cont&aacute;ctanos</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('#catalogs') ?>">Cat&aacute;logos</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 footer-contact">
+                <div class="col-lg-3 col-md-4 col-sm-12 footer-contact">
                     <h3>PeRa DK SAS</h3>
                     <p2>
                         Calle 5 # 4-31 Barrio Centro <br>
@@ -62,8 +63,8 @@
 
     <div class="container footer-bottom clearfix">
         <div class="copyright">
-            Todos los derechos reservados <strong><span>PeRa DK SAS</span></strong><br>
-            <a href="<?= base_url() . route_to('term_conditiones') ?>"> Terminos y Condiciones</a><br>
+            Todos los derechos reservados <strong><span>PERA DK SAS</span></strong><br>
+            <a href="<?= base_url() . route_to('term_conditiones') ?>"> T&eacute;rminos y Condiciones</a><br>
             <a href="<?= base_url() . route_to('warranty_policies') ?>"> Políticas Garantía</a>
         </div>
         <div class="credits">
