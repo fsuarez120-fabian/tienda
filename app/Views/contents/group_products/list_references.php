@@ -3,7 +3,7 @@
 
         <div class="section-title">
             <br>
-            <h2>PeRa Familia</h2>
+            <h2>P E R A Familia</h2>
             <p1></p1>
         </div>
         <div class="row">

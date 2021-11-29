@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h4>Gracias por Soñar Junto a Nosotros.<br>Te PERA Queremos</h4>
+                    <img src="<?= base_url() ?>/public/pictures/peradk/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>

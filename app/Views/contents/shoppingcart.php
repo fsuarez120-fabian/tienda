@@ -15,7 +15,7 @@
 
                 foreach ($cart as $item) {
                 ?>
-                    <div class="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                    <div style="background: #d390f442;" class="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                         <div class="pic">
                             <img src="<?= base_url() . route_to('images_products_miniaturas') . '/' . $item['image']  ?>" class="img-fluid" alt="">
                         </div>

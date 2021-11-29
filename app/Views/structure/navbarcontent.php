@@ -4,7 +4,7 @@
 
         <h1 class="logo mr-auto">
             <a href="<?php echo base_url() ?> ">
-                <img src="<?php echo base_url() ?>/public/pictures/peradk/logo1.png" alt="" class="img-fluid">
+                <img src="<?php echo base_url() ?>/public/pictures/peradk/logo2.png" alt="" class="img-fluid">
             </a>
         </h1>
 
@@ -33,7 +33,7 @@
                                 <li><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>">PeRa Pantalonetas</a></li>
                                 <!-----<li><a href="<?= base_url('/productos/medias/1') ?>">PeRa Medias</a></li>
                                 <li><a href="<?= base_url() . route_to('list_cuerina') ?>">PeRa Cuerina</a></li>---->
-                                <li><a href="<?= base_url() . route_to('show_produts', 'busos') ?>">PeRa Busos Hombre</a></li>
+                                <!-- <li><a href="<?= base_url() . route_to('show_produts', 'busos') ?>">PeRa Busos Hombre</a></li> -->
                             </ul>
                         </li>
                         <li><a href="<?= base_url('/productos/rizos/1') ?>">PeRa Rizos</a></li>
@@ -45,9 +45,12 @@
             </ul>
         </nav><!-- .nav-menu -->
 
-        <a href="<?= base_url() . route_to('cart') ?>" class="get-started-btn scrollto">Carrito de Compras <?php if (isset($_SESSION['shoppingcart'])) {
-                                                                                                                echo '(' . count($_SESSION['shoppingcart']) . ')';
-                                                                                                            } ?></a>
+        <a href="<?= base_url() . route_to('cart') ?>" class="get-started-btn scrollto">
+            <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/icon_cart.png" alt="" class="img-fluid">
+            <?php if (isset($_SESSION['shoppingcart'])) {
+                echo '(' . count($_SESSION['shoppingcart']) . ')';
+            } ?>
+        </a>
 
     </div>
 </header><!-- End Header -->

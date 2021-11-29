@@ -4,7 +4,7 @@
         <div class="section-title">
             <br>
             <h2><?php
-                echo 'PeRa ' . $title;
+                echo 'P E R A ' . $title;
                 ?></h2>
             <p1></p1>
         </div>
