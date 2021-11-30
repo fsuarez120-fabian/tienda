@@ -186,13 +186,16 @@ class Cartforadvisers extends BaseController
                 $counter_rizos +=  $item['quantity_orderdetails'];
             }
         }
-        if ($counter_tap < 6 && $counter_products == $counter_tap + $counter_socks) {
+       /*  if ($counter_tap < 6 && $counter_products == $counter_tap + $counter_socks) {
             return $servientrega[0]['price_typejourney'];
         } else if ($counter_rizos <= 1 && $counter_rizos == $counter_products) {
             return $servientrega[0]['price_typejourney'];
         } else {
             return 0;
-        }
+        } */
+        //con el codigo comentado se hacia las codiciones para cuando no se cobraba el flete
+
+		return $servientrega[0]['price_typejourney'];
     }
 
     public function generateListCart($listofProducts){

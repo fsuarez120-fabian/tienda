@@ -564,7 +564,7 @@ class Product extends BaseController
 		//ADD PRODUCT TO SHOPPING CART
 		if ($this->request->getPostGet('r') == 'addproduct') {
 
-			
+
 
 			$idcategory = $this->request->getPostGet('category');
 			$horma = $this->request->getPostGet('horma');
@@ -589,12 +589,12 @@ class Product extends BaseController
 						break;
 				}
 				$productModel = new ProductModel();
-				$product = $productModel->where('category_idcategory',$idcategory)->where('reference',$reff)->first();
+				$product = $productModel->where('category_idcategory', $idcategory)->where('reference', $reff)->first();
 				$name = $product['name_product'];
 				$image = $product['image_product'];
 			}
 
-		
+
 			//---------------
 
 			$item = 'ref' . $reff . 'cat' .  $idcategory . $this->request->getPostGet('observation') . $this->request->getPostGet('size') . $horma;
@@ -625,7 +625,7 @@ class Product extends BaseController
 					'image' => $image,
 					'size' => $size,
 					'horma' => $horma,
-					'idcategory'=> $Category['idcategory']
+					'idcategory' => $Category['idcategory']
 				]
 			];
 
@@ -806,7 +806,7 @@ class Product extends BaseController
 			$amount = $amount + ($item['price'] * $item['quantity']);
 		}
 		$AMOUNT = $amount + $information['freight'];
-		$TAX =$this->generateTax()['Tax'];
+		$TAX = $this->generateTax()['Tax'];
 		$TAX_RETURN_BASE = $this->generateTax()['TaXReturnBase'];
 		$BUYEREMAIL = $_SESSION['shippinginformation']['email'];
 		$BUYER_FULLNAME = $_SESSION['shippinginformation']['name'] . ' ' . $_SESSION['shippinginformation']['surname'];
@@ -860,7 +860,7 @@ class Product extends BaseController
 	}
 
 
-	public function calculatefreight($citydestination) //OJO TENER EN CUENTA QUE ESTE METODO ESTA EN EL CONTROLADOR DE ADMIN/CARTFORADVISERS DEBEN SER IGUALES
+	public function calculatefreight($citydestination) //OJO TENER EN CUENTA QUE ESTE METODO ESTA EN EL CONTROLADOR DE CARTFORADVISERS DEBEN SER IGUALES
 	{
 		$ORIGIN_CITY = 442;
 		$modelServientrega = new ServientregaModel();
@@ -882,13 +882,16 @@ class Product extends BaseController
 				$counter_rizos +=  $item['quantity'];
 			}
 		}
-		if ($counter_tap < 6 && $counter_products == $counter_tap + $counter_socks) {
+		/* if ($counter_tap < 6 && $counter_products == $counter_tap + $counter_socks) {
 			return $servientrega[0]['price_typejourney'];
 		} else if ($counter_rizos <= 1 && $counter_rizos == $counter_products) {
 			return $servientrega[0]['price_typejourney'];
 		} else {
 			return 0;
-		}
+		} */
+		//con el codigo comentado se hacia las codiciones para cuando no se cobraba el flete
+
+		return $servientrega[0]['price_typejourney'];
 	}
 
 	public function generateTax()
