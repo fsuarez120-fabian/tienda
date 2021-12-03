@@ -6,7 +6,7 @@
         </div>
         <div class="row">
             <div class="col-lg-7">
-                 
+                <img src="<?= base_url(). '/public/pictures/peradk/dia_sin_iva_2.jpeg' ?>" class="img-fluid" alt="fdsfa">
                 <?php
 
                 if (count($cart) <= 0) {
