@@ -806,8 +806,8 @@ class Product extends BaseController
 			$amount = $amount + ($item['price'] * $item['quantity']);
 		}
 		$AMOUNT = $amount + $information['freight'];
-		$TAX = 0;//$this->generateTax()['Tax'];
-		$TAX_RETURN_BASE = 0;//$this->generateTax()['TaXReturnBase'];
+		$TAX = $this->generateTax()['Tax'];
+		$TAX_RETURN_BASE = $this->generateTax()['TaXReturnBase'];
 		$BUYEREMAIL = $_SESSION['shippinginformation']['email'];
 		$BUYER_FULLNAME = $_SESSION['shippinginformation']['name'] . ' ' . $_SESSION['shippinginformation']['surname'];
 		$PAYER_DOCUMENT = $_SESSION['shippinginformation']['numberid'];
