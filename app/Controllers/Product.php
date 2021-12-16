@@ -36,6 +36,12 @@ class Product extends BaseController
 					->where('active_product', 'si')
 					->orderBy('reference', 'asc')
 					->findAll();
+			} else if ($category[0]['idcategory'] == 1) {
+				$products = $productModel->where('category_idcategory', $category[0]['idcategory'])
+					->where('active_product', 'si')
+					->orderBy('score_product','desc')
+					->orderBy('reference', 'asc')
+					->findAll();
 			} else {
 				$products = $productModel->where('category_idcategory', $category[0]['idcategory'])
 					->where('active_product', 'si')
