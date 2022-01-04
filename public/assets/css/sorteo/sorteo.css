@@ -1,47 +1,47 @@
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 25px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 10px;
-  }
-  #hero .hero-img img {
-    width: 70%;
-  }
-}
-
-body {
-  background: linear-gradient(
-      rgba(114, 114, 114, 0.9),
-      rgba(112, 112, 112, 0.9)
-    ),
-    url("../../../../public/pictures/peradk/pera.png") fixed center center;
-}
-
-.contact .info {
-  background: #fff;
-}
-.label-sorteo{
-  color: #fff;
-}
-#hero {
-  text-align: center;
-}
-.card-header {
-  padding: .75rem 1.25rem;
-  margin-bottom: 0;
-  background-color: #76b119;
-  border-bottom: 1px solid rgba(0,0,0,.125);
-  color: #fff;
-  font-size: 20px;
-}
-.form-group {
-  margin-bottom: 0;
-}
-p{
-  margin-bottom: 0rem;
-}
-
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+body {
+  background: linear-gradient(
+      rgba(114, 114, 114, 0.9),
+      rgba(112, 112, 112, 0.9)
+    ),
+    url("../../../../public/pictures/peradk/pera.png") fixed center center;
+}
+
+.contact .info {
+  background: #fff;
+}
+.label-sorteo{
+  color: #fff;
+}
+#hero {
+  text-align: center;
+}
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #76b119;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  color: #fff;
+  font-size: 20px;
+}
+.form-group {
+  margin-bottom: 0;
+}
+p{
+  margin-bottom: 0rem;
+}
+

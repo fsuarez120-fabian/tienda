@@ -125,5 +125,7 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
-miniatures/
-productos/
+Payments.php
+
+/public/pictures/miniatures
+/public/pictures/productos
