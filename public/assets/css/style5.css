@@ -508,7 +508,7 @@ label {
 }
 
 #hero .btn-get-started {
-    font-family: "Patrick Hand", cursive;
+    font-family: var(--font-primary);
     font-weight: 500;
     font-size: 22px;
     letter-spacing: 1px;
@@ -518,11 +518,11 @@ label {
     transition: 0.5s;
     margin: 10px 0 0 0;
     color: #fff;
-    background: #76b119;
+    background: var(--primary-color-corporative);
 }
 
 #hero .btn-get-started:hover {
-    background: #97f106;
+    background: var(--third-color-corporative);
 }
 
 #hero .btn-watch-video {
