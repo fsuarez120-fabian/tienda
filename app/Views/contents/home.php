@@ -412,7 +412,7 @@
 
                                 <a href="https://api.whatsapp.com/send?phone=573118144303" target="”_blank”">
 
-                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendacali5.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/public/pictures/peradk/tiendacali6.jpeg" alt="" class="img-fluid">
 
                                 </a>
 
