@@ -33,7 +33,7 @@
     <!-- CSS Files -->
     <link id="pagestyle" href="<?= base_url() ?>/public/assets-materials-kit/css/material-kit.css?v=3.0.0" rel="stylesheet" />
     <!-- fabian CSS -->
-    <link href="<?= base_url() ?>/public/assets-materials-kit/css/fabian.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/public/assets-materials-kit/css/fabian1.css" rel="stylesheet" />
 </head>
 
 <body class="about-us bg-gray-200">
@@ -73,7 +73,7 @@
                             <!-- <button type="submit" class="btn bg-white text-dark">Create Account</button> -->
                         <?php else : ?>
                             <h1 class="text-white">Muchas Gracias!</h1>
-                            <p class="lead mb-4 text-white opacity-8 mt-5">Ya hemos registrado tus informaci&oacute;n en nuestras bases de datos.</p>
+                            <p class="lead mb-4 text-white opacity-8 mt-5">Ya hemos registrado tu informaci&oacute;n en nuestras bases de datos.</p>
                         <?php endif; ?>
                         <h6 class="text-white mb-2 mt-5">S&iacute;guenos</h6>
                         <div class="d-flex justify-content-center">
