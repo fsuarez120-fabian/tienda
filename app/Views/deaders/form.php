@@ -370,6 +370,16 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-check mt-5">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Si, acepto la <a style="color: #D290F4;" href="https://peradk.com/public/archivos/tratamiento_de_datos.pdf">politica de privacidad</a> de PeRa DK SAS.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <button class="btn bg-gradient-primary btn-icon btn-lg mt-5" type="submit">
                                 <div class="d-flex align-items-center">
                                     ENVIAR

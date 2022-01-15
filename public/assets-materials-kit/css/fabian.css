@@ -120,3 +120,8 @@ body {
     outline: 0;
     box-shadow: none;
 }
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {
+    background: var(--primary-color-corporative);
+    border-color: var(--primary-color-corporative);
+}
