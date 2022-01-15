@@ -16,8 +16,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url() ?>/public/favicon.ico">
+    <link rel="icon" type="image/png" href="<?= base_url() ?>/public/favicon.ico">
     <title>
         Distribuidores PERA
     </title>
@@ -62,15 +62,15 @@
     <!-- End Navbar -->
     <!-- -------- START HEADER 7 w/ text and video ------- -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75" style="background-image: url('<?= base_url() ?>/public/pictures/peradk/new_background.png');">
+        <div class="page-header min-vh-75" style="background-image: url('<?= base_url() ?>/public/img/form_dealer/background.jpg');">
             <span class="mask "></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
                         <h1 class="text-white">¿Deseas ser PERA distribuidor autorizado?</h1>
-                        <p class="lead mb-4 text-white opacity-8">Déjanos algunos datos para poderte contactar.</p>
-                        <button type="submit" class="btn bg-white text-dark">Create Account</button>
-                        <h6 class="text-white mb-2 mt-3">S&iacute;guenos</h6>
+                        <p class="lead mb-4 text-white opacity-8 mt-5">Déjanos algunos datos para poderte contactar.</p>
+                        <!-- <button type="submit" class="btn bg-white text-dark">Create Account</button> -->
+                        <h6 class="text-white mb-2 mt-5">S&iacute;guenos</h6>
                         <div class="d-flex justify-content-center">
                             <a href="https://www.facebook.com/AlpargatasPeRa/"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
                             <a href="https://www.instagram.com/peracolombia/"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
@@ -82,398 +82,310 @@
         </div>
     </header>
     <!-- -------- END HEADER 7 w/ text and video ------- -->
-    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
-        <!-- Section with four info areas left & one card right with image and waves -->
-        <section class="py-7">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="row justify-content-start">
-                            <div class="col-md-6">
-                                <div class="input-group input-group-outline mb-4">
-                                    <label class="form-label">Nombres</label>
-                                    <input class="form-control" type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group input-group-outline">
-                                    <label class="form-label">Apellidos</label>
-                                    <input type="text" class="form-control mb-sm-0">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="info">
-                                    <i class="material-icons text-3xl text-gradient text-info mb-3">public</i>
-                                    <h5>Fully integrated</h5>
-                                    <p>We get insulted by others, lose trust for those We get back freezes</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="info">
-                                    <i class="material-icons text-3xl text-gradient text-info mb-3">payments</i>
-                                    <h5>Payments functionality</h5>
-                                    <p>We get insulted by others, lose trust for those We get back freezes</p>
-                                </div>
-                            </div>
+    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 mb-5">
+        <form action="<?= base_url() . route_to('send_data_form') ?>" method="post">
+            <!-- Section with four info areas left & one card right with image and waves -->
+            <section class="py-5">
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1">
+
                         </div>
-                        <div class="row justify-content-start mt-4">
-                            <div class="col-md-6">
-                                <div class="info">
-                                    <i class="material-icons text-3xl text-gradient text-info mb-3">apps</i>
-                                    <h5>Prebuilt components</h5>
-                                    <p>We get insulted by others, lose trust for those We get back freezes</p>
+                        <div class="col-lg-10">
+                            <div class="row justify-content-start">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">Nombres</label>
+                                        <input name="nombres" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">Apellidos</label>
+                                        <input name="apellidos" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group mb-4">
+                                        <select name="tipo_de_identificacion" class="form-select" aria-label="Default select example">
+                                            <option selected>-- Tipo de Identificaci&oacute;n --</option>
+                                            <?php foreach ($type_identifications as $type) : ?>
+                                                <option value="<?= $type['id_type_identification'] ?>"><?= $type['abb_type_identification'] ?> - <?= $type['name_type_identification'] ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">N&uacute;mero de Identificaci&oacute;n</label>
+                                        <input name="numero_de_identifiacion" type="text" class="form-control mb-sm-0">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">WhatsApp o N&uacute;m Celular</label>
+                                        <input name="numero_celular" type="text" class="form-control mb-sm-0">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">Correo electr&oacute;nico</label>
+                                        <input name="correo_electronico" type="text" class="form-control mb-sm-0">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">Ocupaci&oacute;n</label>
+                                        <input name="ocupacion" type="text" class="form-control mb-sm-0">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group mb-4">
+                                        <select name="estado_civil" class="form-select" aria-label="Default select example">
+                                            <option selected>-- Estado Civil --</option>
+                                            <?php foreach ($civil_status as $status) : ?>
+                                                <option value="<?= $status['id_civil_status'] ?>"><?= $status['name_civil_status'] ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label class="form-label">Direcci&oacute;n</label>
+                                        <input name="direccion" type="text" class="form-control mb-sm-0">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="input-group input-group-outline mb-4">
+                                        <label for="fnac">Fecha de </br> nacimiento -</label>
+                                        <input name="fecha de nacimiento" id="fnac" type="date" class="form-control mb-sm-0">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="info">
-                                    <i class="material-icons text-3xl text-gradient text-info mb-3">3p</i>
-                                    <h5>Improved platform</h5>
-                                    <p>We get insulted by others, lose trust for those We get back freezes</p>
-                                </div>
-                            </div>
+
                         </div>
-                    </div>
-                    <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
-                        <div class="card">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="img-colored-shadow" class="img-fluid border-radius-lg">
-                                </a>
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="font-weight-normal">
-                                    <a href="javascript:;">Get insights on Search</a>
-                                </h5>
-                                <p class="mb-0">
-                                    Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards.
-                                </p>
-                                <button type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3">Find out more</button>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- END Section with four info areas left & one card right with image and waves -->
-        <!-- -------- START Features w/ pattern background & stats & rocket -------- -->
-        <section class="pb-5 position-relative bg-gradient-dark mx-n3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 text-start mb-5 mt-5">
-                        <h3 class="text-white z-index-1 position-relative">The Executive Team</h3>
-                        <p class="text-white opacity-8 mb-0">There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill.</p>
+            </section>
+            <!-- END Section with four info areas left & one card right with image and waves -->
+            <!-- -------- START Features w/ pattern background & stats & rocket -------- -->
+            <section class="pb-5 position-relative bg-gradient-dark mx-n3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 text-start mb-5 mt-5">
+                            <h3 class="text-white z-index-1 position-relative">DATOS DE ASPIRACION PERA DISTRIBUIDOR AUTORIZADO</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="card card-profile mt-4">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                                    <a href="javascript:;">
-                                        <div class="p-3 pe-md-0">
-                                            <img class="w-100 border-radius-md shadow-lg" src="../assets/img/team-5.jpg" alt="image">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="card card-profile mt-4">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6 mt-n5">
+                                        <a href="javascript:;">
+                                            <div class="p-3 pe-md-0">
+                                                <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest1.jpeg" alt="image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                        <div class="card-body ps-lg-0">
+                                            <h5 class="mb-0">¿En cuál ciudad/país estás interesado en colocar tu PERA punto de distribución?</h5>
+                                            <div class="row mt-3">
+                                                <div class="col-md-6">
+                                                    <div class="input-group mb-4">
+                                                        <select id="select_department" class="form-select" aria-label="Default select example">
+                                                            <option value="">-- Departamento --</option>
+                                                            <?php foreach ($departments as $department) : ?>
+                                                                <option value="<?= $department['iddepartment'] ?>"><?= $department['name_department'] ?></option>
+                                                            <?php endforeach; ?>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-group mb-4">
+                                                        <select name="ciudad" id="cities_select" class="form-select" aria-label="Default select example">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                                    <div class="card-body ps-lg-0">
-                                        <h5 class="mb-0">Emma Roberts</h5>
-                                        <h6 class="text-info">UI Designer</h6>
-                                        <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="card card-profile mt-lg-4 mt-5">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6 mt-n5">
+                                        <a href="javascript:;">
+                                            <div class="p-3 pe-md-0">
+                                                <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest2.jpeg" alt="image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                        <div class="card-body ps-lg-0">
+                                            <h5 class="mb-0">
+                                                ¿En cuál sector/centro comercial estas interesado en ubicar tu PERA punto de distribución?
+                                            </h5>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="input-group input-group-outline mb-4">
+                                                    <label class="form-label">Sector/Centro Comercial</label>
+                                                    <input name="pregunta_2" type="text" class="form-control mb-sm-0">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="card card-profile mt-lg-4 mt-5">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                                    <a href="javascript:;">
-                                        <div class="p-3 pe-md-0">
-                                            <img class="w-100 border-radius-md shadow-lg" src="../assets/img/bruce-mars.jpg" alt="image">
+                    <div class="row mt-4">
+                        <div class="col-lg-6 col-12">
+                            <div class="card card-profile mt-4 z-index-2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6 mt-n5">
+                                        <a href="javascript:;">
+                                            <div class="p-3 pe-md-0">
+                                                <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest3.jpeg" alt="image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                        <div class="card-body ps-lg-0">
+                                            <h5 class="mb-0">¿Cuánto es tu presupuesto para abrir tu PERA punto de distribución?</h5>
+                                            <select name="pregunta_3" class="form-select mt-3" aria-label="Default select example">
+                                                <option value="">-- Presupuesto --</option>
+                                                <option value="1-10">De 1 a 10 millones</option>
+                                                <option value="10-20">De 10 a 20 millones</option>
+                                                <option value="20-30">De 20 a 30 millones</option>
+                                                <option value="30-40">De 30 a 40 millones</option>
+                                                <option value="40-50">De 40 a 50 millones</option>
+                                                <option value="50-60">De 50 a 60 millones</option>
+                                                <option value="60-70">De 60 a 70 millones</option>
+                                                <option value="70-80">De 70 a 80 millones</option>
+                                                <option value="80-90">De 80 a 90 millones</option>
+                                                <option value="90-100">De 90 a 100 millones</option>
+                                                <option value="100+">M&aacute;s de 100 millones</option>
+
+                                            </select>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                                    <div class="card-body ps-lg-0">
-                                        <h5 class="mb-0">William Pearce</h5>
-                                        <h6 class="text-info">Boss</h6>
-                                        <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="card card-profile mt-lg-4 mt-5 z-index-2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-6 mt-n5">
+                                        <a href="javascript:;">
+                                            <div class="p-3 pe-md-0">
+                                                <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest4.jpeg" alt="image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                        <div class="card-body ps-lg-0">
+                                            <h5 class="mb-0">¿Por qué quieres ser un PERA distribuidor autorizado?</h5>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="input-group input-group-outline mb-4">
+                                                    <textarea name="pregunta_4" type="text" class="form-control mb-sm-0" rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-lg-6 col-12">
-                        <div class="card card-profile mt-4 z-index-2">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                                    <a href="javascript:;">
-                                        <div class="p-3 pe-md-0">
-                                            <img class="w-100 border-radius-md shadow-lg" src="../assets/img/ivana-squares.jpg" alt="image">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                                    <div class="card-body ps-lg-0">
-                                        <h5 class="mb-0">Ivana Flow</h5>
-                                        <h6 class="text-info">Athlete</h6>
-                                        <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
-                                    </div>
+            </section>
+
+            <section class="my-5 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-lg-10 mt-4">
+                            <div class="card">
+                                <div class="card-body text-center p-2">
+                                    <h5 class="font-primary-pera">
+                                        REFERENCIAS COMERCIALES
+                                    </h5>
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Telefono</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="col-md-12">
+                                                        <div class="input-group input-group-outline mb-4">
+                                                            <label class="form-label">Nom Ref 1</label>
+                                                            <input name="nombre_ref_1" type="text" class="form-control mb-sm-0">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="col-md-12">
+                                                        <div class="input-group input-group-outline mb-4">
+                                                            <label class="form-label">Tel Ref 1</label>
+                                                            <input name="telefono_ref_1" type="text" class="form-control mb-sm-0">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="col-md-12">
+                                                        <div class="input-group input-group-outline mb-4">
+                                                            <label class="form-label">Nom Ref 1</label>
+                                                            <input name="nombre_ref_2" type="text" class="form-control mb-sm-0">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="col-md-12">
+                                                        <div class="input-group input-group-outline mb-4">
+                                                            <label class="form-label">Tel Ref 1</label>
+                                                            <input name="telefono_ref_2" type="text" class="form-control mb-sm-0">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="card card-profile mt-lg-4 mt-5 z-index-2">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                                    <a href="javascript:;">
-                                        <div class="p-3 pe-md-0">
-                                            <img class="w-100 border-radius-md shadow-lg" src="../assets/img/ivana-square.jpg" alt="image">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                                    <div class="card-body ps-lg-0">
-                                        <h5 class="mb-0">Marquez Garcia</h5>
-                                        <h6 class="text-info">JS Developer</h6>
-                                        <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <button class="btn bg-gradient-primary btn-icon btn-lg mt-5" type="submit">
+                            <div class="d-flex align-items-center">
+                                ENVIAR
+                                <i class="material-icons ms-2" aria-hidden="true">favorite</i>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- -------- END Features w/ pattern background & stats & rocket -------- -->
-        <section class="pt-4 pb-6" id="count-stats">
-            <div class="container">
-                <div class="row mb-7">
-                    <div class="col-lg-2 col-md-4 col-6 mb-4">
-                        <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-coinbase.svg" alt="logo">
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-4">
-                        <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-nasa.svg" alt="logo">
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-4">
-                        <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-netflix.svg" alt="logo">
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-4">
-                        <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-pinterest.svg" alt="logo">
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-4">
-                        <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-spotify.svg" alt="logo">
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 mb-4">
-                        <img class="w-100 opacity-7" src="../assets/img/logos/gray-logos/logo-vodafone.svg" alt="logo">
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-3">
-                        <h1 class="text-gradient text-info" id="state1" countTo="5234">0</h1>
-                        <h5>Projects</h5>
-                        <p>Of “high-performing” level are led by a certified project manager</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h1 class="text-gradient text-info"><span id="state2" countTo="3400">0</span>+</h1>
-                        <h5>Hours</h5>
-                        <p>That meets quality standards required by our users</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h1 class="text-gradient text-info"><span id="state3" countTo="24">0</span>/7</h1>
-                        <h5>Support</h5>
-                        <p>Actively engage team members that finishes on time</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
-        <section class="my-5 pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 m-auto">
-                        <h4>Be the first to see the news</h4>
-                        <p class="mb-4">
-                            Your company may not be in the software business,
-                            but eventually, a software company will be in your business.
-                        </p>
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="input-group input-group-outline">
-                                    <label class="form-label">Email Here...</label>
-                                    <input type="text" class="form-control mb-sm-0">
-                                </div>
-                            </div>
-                            <div class="col-4 ps-0">
-                                <button type="button" class="btn bg-gradient-info mb-0 h-100 position-relative z-index-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 ms-auto">
-                        <div class="position-relative">
-                            <img class="max-width-50 w-100 position-relative z-index-2" src="../assets/img/macbook.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </form>
         <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
     </div>
-    <footer class="footer pt-5 mt-5">
-        <div class="container">
-            <div class=" row">
-                <div class="col-md-3 mb-4 ms-auto">
-                    <div>
-                        <a href="https://www.creative-tim.com/product/material-kit">
-                            <img src="../assets/img/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
-                        </a>
-                        <h6 class="font-weight-bolder mb-4">Material Kit 2</h6>
-                    </div>
-                    <div>
-                        <ul class="d-flex flex-row ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
-                                    <i class="fab fa-facebook text-lg opacity-8"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
-                                    <i class="fab fa-twitter text-lg opacity-8"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
-                                    <i class="fab fa-dribbble text-lg opacity-8"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
-                                    <i class="fab fa-github text-lg opacity-8"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">
-                                    <i class="fab fa-youtube text-lg opacity-8"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4">
-                    <div>
-                        <h6 class="text-sm">Company</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
-                                    About Us
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
-                                    Freebies
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                                    Premium Tools
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4">
-                    <div>
-                        <h6 class="text-sm">Resources</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://iradesign.io/" target="_blank">
-                                    Illustrations
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
-                                    Bits & Snippets
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
-                                    Affiliate Program
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4">
-                    <div>
-                        <h6 class="text-sm">Help & Support</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
-                                    Knowledge Center
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-mk2-footer" target="_blank">
-                                    Custom Development
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
-                                    Sponsorships
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
-                    <div>
-                        <h6 class="text-sm">Legal</h6>
-                        <ul class="flex-column ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/terms-of-service" target="_blank">
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/privacy-policy" target="_blank">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
-                                    Licenses (EULA)
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="text-center">
-                        <p class="text-dark my-4 text-sm font-weight-normal">
-                            All rights reserved. Copyright © <script>
-                                document.write(new Date().getFullYear())
-                            </script> Material Kit by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-                        </p>
-                    </div>
-                </div>
+    <div class="container mb-6">
+        <div class="row justify-content-center ">
+            <div class="col-lg-6">
+                <img src="<?= base_url() ?>/public/pictures/peradk/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
             </div>
         </div>
-    </footer>
+    </div>
+
     <!--   Core JS Files   -->
     <script src="<?= base_url() ?>/public/assets-materials-kit/js/core/popper.min.js" type="text/javascript"></script>
     <script src="<?= base_url() ?>/public/assets-materials-kit/js/core/bootstrap.min.js" type="text/javascript"></script>
@@ -505,12 +417,10 @@
             var scrollPosition = scrollY + windowHeight;
             // get element position (distance from the top of the page to the bottom of the element)
             var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
-
             // is scroll position greater than element position? (is element in view?)
             if (scrollPosition > elementPosition) {
                 return true;
             }
-
             return false;
         }
 
@@ -569,6 +479,27 @@
                 var oVal = (window.scrollY / 3);
                 bgParallax.style.transform = 'translate3d(0,' + oVal + 'px,0)';
             }, 6);
+        }
+    </script>
+    <script src="<?php echo base_url() ?>/public/assets/vendor/jquery/jquery.min.js"></script>
+    <!----SCRIPT PARA CARGAR LAS CIUDADES ------>
+    <script>
+        $(document).ready(function() {
+            reloadcities();
+            $("#select_department").change(function() {
+                reloadcities();
+            });
+        });
+
+        function reloadcities() {
+            $.ajax({
+                type: "post",
+                url: "<?= base_url() . route_to('ajax_get_cities') ?>",
+                data: "department=" + $("#select_department").val(),
+                success: function(r) {
+                    $("#cities_select").html(r);
+                },
+            });
         }
     </script>
 </body>
