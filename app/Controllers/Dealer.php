@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 use App\Models\Admin\PedidoModel;
 use App\Models\CivilStatusModel;
-use App\Models\CodigomotoModel;
 use App\Models\DepartamentModel;
+use App\Models\FormDealerModel;
 use App\Models\SorteoModel;
 use App\Models\TypeIdentificationModel;
 
@@ -13,10 +13,10 @@ class Dealer extends BaseController
 {
     public function __construct()
     {
-        $this->mdlCode = new CodigomotoModel();
         $this->mdlTypeIdentification = new TypeIdentificationModel();
         $this->mdlCivilStatus = new CivilStatusModel();
         $this->mdldepartments = new DepartamentModel();
+        $this->mdlFormDealer = new FormDealerModel();
     }
 
     public function form()
@@ -30,74 +30,56 @@ class Dealer extends BaseController
 
     public function validateForm()
     {
-        d($this->request->getPostGet());
+        if (!empty(session()->get('form_completed'))) {
+            return redirect()->to(base_url() . route_to('form_dealer'));
+        }
         if (!$this->validate([
             'nombres'    =>  'required',
             'apellidos' => 'required',
             'tipo_de_identificacion' => 'required|is_not_unique[type_identification.id_type_identification]',
-            'numero_de_identifiacion' => 'required|numeric',
-            'numero_celular' => 'required|numeric',
+            'numero_de_identifiacion' => 'required',
+            'numero_celular' => 'required',
             'correo_electronico' => 'required|valid_email',
             'ocupacion' => 'required',
             'estado_civil' => 'required|is_not_unique[civil_status.id_civil_status]',
             'direccion' => 'required',
-            'fecha_de_nacimiento' => 'required|valid_date[Y/m/d]',
+            'fecha_de_nacimiento' => 'required|valid_date[Y-m-d]',
             'ciudad' => 'required|is_not_unique[city.idcity]',
             'pregunta_2' => 'required',
             'pregunta_3' => 'required',
             'pregunta_4' => 'required',
             'nombre_ref_1' => 'required',
-            'telefono_ref_1' => 'required|numeric',
+            'telefono_ref_1' => 'required',
             'nombre_ref_2' => 'required',
-            'telefono_ref_2' => 'required|numeric',
+            'telefono_ref_2' => 'required',
         ])) {
-            return (redirect()->to(base_url().route_to('form_dealer'))->with('validate', dd($this->validator->getErrors()))->withInput());
+            return (redirect()->to(base_url() . route_to('form_dealer'))->with('validate', dd($this->validator->getErrors()))->withInput());
         }
-        return;
-    }
+        $this->mdlFormDealer->insert([
+            'name_form' => $this->request->getPost('nombres'),
+            'surname_form' => $this->request->getPost('apellidos'),
+            'type_identification_id' => $this->request->getPost('tipo_de_identificacion'),
+            'number_identification_form' => $this->request->getPost('numero_de_identifiacion'),
+            'celular_form' => $this->request->getPost('numero_celular'),
+            'email_form' => $this->request->getPost('correo_electronico'),
+            'ocupation_form' => $this->request->getPost('ocupacion'),
+            'civil_status_id' => $this->request->getPost('estado_civil'),
+            'adress_form' => $this->request->getPost('direccion'),
+            'date_birth_form' => $this->request->getPost('fecha_de_nacimiento'),
+            'city_id_form' => $this->request->getPost('ciudad'),
+            'quest2' => $this->request->getPost('pregunta_2'),
+            'quest3' => $this->request->getPost('pregunta_3'),
+            'quest4' => $this->request->getPost('pregunta_4'),
+            'name_ref_1' => $this->request->getPost('nombre_ref_1'),
+            'tel_ref_1' => $this->request->getPost('telefono_ref_1'),
+            'name_ref_2' => $this->request->getPost('nombre_ref_2'),
+            'tel_ref_2' => $this->request->getPost('telefono_ref_2'),
+        ]);
 
-    public function registerSorteo()
-    {
-        //validaciones de los campos
-        if (!$this->validate([
-            'code'    => [
-                'rules'  => 'required|is_not_unique[codigosmoto.codigo_codigo]',
-                'errors' => [
-                    'required' => 'El codigo es requerido.',
-                    'is_not_unique' => 'El código no es válido.'
-                ]
-            ],
-            'cedula'    => [
-                'rules'  => 'required|is_not_unique[codigosmoto.cliente_codigo]',
-                'errors' => [
-                    'required' => 'La cedula es requerida.',
-                    'is_not_unique' => 'La cedula del cliente no existe.'
-                ]
-            ],
-        ])) {
-            return redirect()->to(base_url())->with('validate', $this->validator->getErrors())->withInput();
-        }
-
-        //datos recibidos del formulario de inscription
-        $code = $this->request->getPost('code');
-        $cedula = $this->request->getPost('cedula');
-
-        if ($codeobject = $this->mdlCode->where('codigo_codigo', $code)->where('cliente_codigo', $cedula)->first()) {
-            if ($codeobject['active'] == true) {
-                return redirect()->to(base_url())->with('msg', 'PeRa Amiguis, ya utilizaste el código, ya estas participando');
-            } else {
-                $this->mdlCode->update($codeobject['id_codigosmoto'], [
-                    'active' => 1,
-                    'ip_codigo' => $this->getRealIP()
-                ]);
-                return view('sorteos/headersorteo')
-                    . view('structure/navbarcontent')
-                    . View('sorteos/success', ['code' => $code, 'cedula' => $cedula])
-                    . view('sorteos/footersorteo');
-            }
-        } else {
-            return redirect()->to(base_url())->with('errors', 'No existe el código ingresado')->withInput();
-        }
+        session()->set([
+            'form_completed' => true,
+        ]);
+        return  redirect()->to(base_url() . route_to('form_dealer'));
     }
 
     function getRealIP()
