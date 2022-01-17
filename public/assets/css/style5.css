@@ -19,6 +19,16 @@
     src: url("../../../public/assets/font/pera-lcour.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "aguacate";
+    src: url("../../../public/assets/font/AguacateByKathe-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "aguacate Secundary";
+    src: url("../../../public/assets/font/agucatebykathe-agency_fb.ttf") format("truetype");
+}
+
 
 /*--------------------------------------------------------------
 
@@ -34,9 +44,11 @@
     --third-color-corporative: #b46ee5;
     --fifth-color-corporative: #deacfc;
     --light-color-corporative: #d390f442;
-    --font-primary: "Neon Absolute";
+    /* --font-primary: "Neon Absolute"; */
+    --font-primary: "aguacate";
     --font-secundary: "Bebas";
-    --font-third: "lcour";
+    /* --font-third: "lcour"; */
+    --font-third: "Bebas";
 }
 
 
@@ -1581,7 +1593,6 @@ section {
 .contact .info h4 {
     padding: 0 0 0 60px;
     font-size: 24px;
-    font-weight: 600;
     margin-bottom: 5px;
     color: #444444;
     text-transform: uppercase;

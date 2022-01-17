@@ -64,7 +64,7 @@
                         <div class="row">
                             <div class="col-lg-3"></div>
                             <div class="col-lg-6">
-                                <img src="<?= base_url('public/pictures/peradk') ?>/twologo.png" alt="" class="img-fluid">
+                                <img src="<?= base_url('public/pictures/peradk') ?>/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-lg-3"></div>
                         </div>
