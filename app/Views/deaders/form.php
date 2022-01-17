@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
         <div class="container">
             <a class="navbar-brand  text-white " href="https://demos.creative-tim.com/material-kit/presentation" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-                <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/logo2.png" alt="" class="img-fluid">
+                <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/logo3.png" alt="" class="img-fluid">
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mt-2">
@@ -68,7 +68,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
                         <?php if (empty(session()->get('form_completed'))) : ?>
-                            <h1 class="text-white">¿Deseas ser PERA distribuidor autorizado?</h1>
+                            <h1 class="text-white">¿Deseas ser <span class="principal-font">PERA</span> distribuidor autorizado?</h1>
                             <p class="lead mb-4 text-white opacity-8 mt-5">Déjanos algunos datos para poderte contactar.</p>
                             <!-- <button type="submit" class="btn bg-white text-dark">Create Account</button> -->
                         <?php else : ?>
@@ -181,7 +181,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 text-start mb-5 mt-5">
-                                <h3 class="text-white z-index-1 position-relative">DATOS DE ASPIRACION PERA DISTRIBUIDOR AUTORIZADO</h3>
+                                <h3 class="text-white z-index-1 position-relative principal-font">DATOS DE ASPIRACION PERA DISTRIBUIDOR AUTORIZADO</h3>
                             </div>
                         </div>
                         <div class="row">
@@ -316,7 +316,7 @@
                             <div class="col-lg-10 mt-4">
                                 <div class="card">
                                     <div class="card-body text-center p-2">
-                                        <h5 class="font-primary-pera">
+                                        <h5 class="principal-font">
                                             REFERENCIAS COMERCIALES
                                         </h5>
                                         <table class="table table-borderless">

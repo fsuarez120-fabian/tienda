@@ -17,6 +17,16 @@
     src: url("../../../public/assets/font/pera-lcour.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "aguacate";
+    src: url("../../../public/assets/font/AguacateByKathe-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "aguacate Secundary";
+    src: url("../../../public/assets/font/agucatebykathe-agency_fb.ttf") format("truetype");
+}
+
 
 /*--------------------------------------------------------------
 # VARIABLES
@@ -33,6 +43,7 @@
     --font-primary: "Neon Absolute";
     --font-secundary: "Bebas";
     --font-third: "lcour";
+    --font-aguacate: "aguacate";
 }
 
 h1,
@@ -124,4 +135,8 @@ body {
 .form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {
     background: var(--primary-color-corporative);
     border-color: var(--primary-color-corporative);
+}
+
+.principal-font {
+    font-family: var(--font-aguacate);
 }
