@@ -24,7 +24,7 @@
   <link href="<?php echo base_url() ?>/public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="<?php echo base_url() ?>/public/assets/css/style5.css" rel="stylesheet">
+  <link href="<?php echo base_url() ?>/public/assets/css/style6.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
