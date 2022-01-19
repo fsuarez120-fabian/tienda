@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
         <div class="container">
             <a class="navbar-brand  text-white " href="https://demos.creative-tim.com/material-kit/presentation" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-                <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/logo3.png" alt="" class="img-fluid">
+                <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/logo4.png" alt="" class="img-fluid">
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mt-2">

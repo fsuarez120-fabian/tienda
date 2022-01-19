@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
         <h1 class="logo mr-auto">
             <a href="<?= base_url() ?> ">
-                <img src="<?= base_url() ?>/public/pictures/peradk/logo3.png" alt="" class="img-fluid">
+                <img src="<?= base_url() ?>/public/pictures/peradk/logo4.png" alt="" class="img-fluid">
             </a>
         </h1>
         <nav class="nav-menu d-none d-lg-block">
