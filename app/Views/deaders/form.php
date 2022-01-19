@@ -62,20 +62,20 @@
     <!-- End Navbar -->
     <!-- -------- START HEADER 7 w/ text and video ------- -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75" style="background-image: url('<?= base_url() ?>/public/img/form_dealer/background1.jpg');">
+        <div class="page-header min-vh-75" style="background-image: url('<?= base_url() ?>/public/img/form_dealer/background2.jpg');">
             <span class="mask "></span>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center mx-auto my-auto">
+                    <div class="col-lg-8 text-center mt-6">
                         <?php if (empty(session()->get('form_completed'))) : ?>
                             <h1 style="font-family: 'Bebas';background-color: #D290F4; border-radius: 10px; padding: 1rem; color: #000000; font-weight: 600;">
                                 ¿Quieres ser <br> PERA distribuidor <br> autorizado?
                             </h1>
-                            <p class="lead mb-4 text-white opacity-8 mt-5">Déjanos algunos datos para poderte contactar.</p>
+                            <p class="lead mb-2 text-white opacity-8 mt-2">Déjanos algunos datos para poderte contactar.</p>
                             <!-- <button type="submit" class="btn bg-white text-dark">Create Account</button> -->
                         <?php else : ?>
                             <h1 class="text-white">Muchas Gracias!</h1>
-                            <p class="lead mb-4 text-white opacity-8 mt-5">Ya hemos registrado tu informaci&oacute;n en nuestras bases de datos.</p>
+                            <p class="lead mb-4 text-white opacity-8 mt-4">Ya hemos registrado tu informaci&oacute;n en nuestras bases de datos.</p>
                         <?php endif; ?>
                         <h6 class="text-white mb-2 mt-5">S&iacute;guenos</h6>
                         <div class="d-flex justify-content-center">
