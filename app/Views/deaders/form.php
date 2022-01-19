@@ -68,7 +68,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
                         <?php if (empty(session()->get('form_completed'))) : ?>
-                            <h1 style="background-color: #D290F4; border-radius: 10px; padding: 1rem; color: #000000; font-weight: 900;" >¿Deseas ser <span class="principal-font">PERA</span> distribuidor autorizado?</h1>
+                            <h1 style="font-family: 'Bebas';background-color: #D290F4; border-radius: 10px; padding: 1rem; color: #000000; font-weight: 600;">¿Quieres ser PERA distribuidor autorizado?</h1>
                             <p class="lead mb-4 text-white opacity-8 mt-5">Déjanos algunos datos para poderte contactar.</p>
                             <!-- <button type="submit" class="btn bg-white text-dark">Create Account</button> -->
                         <?php else : ?>
@@ -374,7 +374,7 @@
                                 <div class="form-check mt-5">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                                     <label class="form-check-label" for="flexCheckDefault">
-                                    Si, acepto la <a style="color: #D290F4;" href="https://peradk.com/public/archivos/tratamiento_de_datos.pdf">politica de privacidad</a> de PeRa DK SAS.
+                                        Si, acepto la <a style="color: #D290F4;" href="https://peradk.com/public/archivos/tratamiento_de_datos.pdf">politica de privacidad</a> de PeRa DK SAS.
                                     </label>
                                 </div>
                             </div>
