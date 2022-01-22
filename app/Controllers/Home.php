@@ -21,7 +21,7 @@ class Home extends BaseController
 			'enabelmodal' => $enabelmodal
 		);
 		return view('structure/header')
-			. view('structure/navbar')
+			. view('structure/navbarcontent')
 			. view('contents/home',$data)
 			. view('structure/footer');
 	}
