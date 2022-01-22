@@ -15,19 +15,32 @@
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('view_list_products_family') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/familia1.png" alt="familia"></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('list_shirts') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/camisetas1.png" alt=""></a></div>
                 <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'kids') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/kids1.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url()  . route_to('show_produts', 'tapabocas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tapabocas1.png" alt=""></a></div>
                 <div class="d-none d-lg-block d-xl-block w-100"></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/jeans1.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/sisa1.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/larga1.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodycuellotortuga') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tortuga1.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pantalonetas1.png" alt=""></a></div>
-                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'leggings') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/leggings.jpeg" alt=""></a></div> -->
-                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'busos') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/busoscaballero.jpeg" alt=""></a></div> -->
-                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pijamas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pijamas.jpeg" alt=""></a></div> -->
-                <!--<div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/medias/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/medias.jpeg" alt=""></a></div>-->
-                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/rizos/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/rizos1.png" alt=""></a></div>
-                <div class="col-6 col-md-4 col-lg"><a href="https://peradk.com/lk/mi-cartilla-pera-d-k/"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/cartilla1.png" alt=""></a></div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'jeans') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/jeans1.png" alt=""></a></div>
+                                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodysisas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/sisa1.png" alt=""></a></div>
+                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodylargas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/larga1.png" alt=""></a></div> -->
+                                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'bodycuellotortuga') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tortuga1.png" alt=""></a></div>
+                                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pantaloneta') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pantalonetas1.png" alt=""></a></div> -->
+                                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'leggings') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/leggings.jpeg" alt=""></a></div> -->
+                                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'busos') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/busoscaballero.jpeg" alt=""></a></div> -->
+                                <!-- <div class="col-6 col-md-4 col-lg"><a href="<?= base_url() . route_to('show_produts', 'pijamas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/pijamas.jpeg" alt=""></a></div> -->
+                                <!--<div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/medias/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/medias.jpeg" alt=""></a></div>-->
+                                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url('/productos/rizos/1') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/rizos1.png" alt=""></a></div>
+                                <div class="col-6 col-md-4 col-lg"><a href="<?= base_url()  . route_to('show_produts', 'tapabocas') ?>"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/tapabocas1.png" alt=""></a></div>
+                                <div class="col-6 col-md-4 col-lg"><a href="https://peradk.com/lk/mi-cartilla-pera-d-k/"><img class="img-fluid" src="<?php echo base_url() ?>/public/pictures/categories/cartilla1.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section><!-- End Productos Section -->

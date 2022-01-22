@@ -2,8 +2,10 @@
 
 namespace App\Controllers;
 
+use App\Entities\Product;
 use App\Models\CategoryhassizeModel;
 use App\Models\CategoryModel;
+use App\Models\ProductEntityModel;
 use App\Models\ProductModel;
 use App\Models\ReferencegroupModel;
 use CodeIgniter\Model;
@@ -18,7 +20,7 @@ class Family extends BaseController
         return view('structure/header')
             . view('structure/navbarcontent')
             . view('contents/group_products/list_references', [
-                'products' => $mdlReferenceGroup->where('group_of_category_id_group_of_category', 1)->where('active_reference_group',1)->orderBy('score_reference_group','desc')->findAll()
+                'products' => $mdlReferenceGroup->where('group_of_category_id_group_of_category', 1)->where('active_reference_group', 1)->orderBy('score_reference_group', 'desc')->findAll()
             ])
             . view('structure/footer');
     }
@@ -60,6 +62,37 @@ class Family extends BaseController
             . view('structure/footer');
 
         echo $ref;
+    }
+
+    public function detailFamily($ref)
+    {
+        //declara los modelos
+        $mdlProduct = new ProductEntityModel();
+
+        $products = array();
+        if ($pantaloneta = $mdlProduct->where('category_idcategory', 7)->where('reference', $ref)->first()) {
+            array_push($products, $pantaloneta);
+        }
+        if ($sisa = $mdlProduct->where('category_idcategory', 3)->where('reference', $ref)->first()) {
+            array_push($products, $sisa);
+        }
+        if ($larga = $mdlProduct->where('category_idcategory', 4)->where('reference', $ref)->first()) {
+            array_push($products, $larga);
+        }
+
+       
+      
+        //declaracion de los modelos declaracion
+        $mdlReferenceGroup = new ReferencegroupModel();
+
+        return view('structure/header')
+            . view('structure/navbarcontent')
+            . view('contents/family/detail_family', [
+                'ref_family' => $mdlReferenceGroup->find($ref),
+                'products' => $products,
+                'reference' => $ref
+            ])
+            . view('structure/footer');
     }
 
 
@@ -192,6 +225,6 @@ class Family extends BaseController
             }
         }
 
-        return redirect()->to(base_url().route_to('cart'));
+        return redirect()->to(base_url() . route_to('cart'));
     }
 }

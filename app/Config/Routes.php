@@ -63,9 +63,14 @@ $routes->get('/productos/bodycuellotortuga/(:num)', 'Product::detailproductssize
 $routes->get('/productos/busos/(:num)', 'Product::detailproductssize/$1');
 $routes->get('/productos/kids/(:num)', 'Product::detailproductssize/$1');
 
+//RUTAS UTILIZADAS PARA CREAR SECCION FAMILIA
 //routes of gropus of products
 $routes->get('/grupoproductos/familia/(:num)', 'Family::viewDetailGroupProduct/$1', ['as' => 'detail_group_family']);
 $routes->post('/addcartfamily', 'Family::addToShippingCart', ['as' => 'add_to_cart_family']);
+//ruta para el detalle de familia
+$routes->get('/familia/(:num)', 'Family::detailFamily/$1', ['as' => 'detail_family']);
+//ajax para traer el detalle de familia
+$routes->post('/get-detail-family', 'Ajax::getDetailFamily', ['as' => 'get_info_detail_family']);
 
 //route of purchase
 $routes->post('/carrito', 'Product::shoppingcart', ['as' => 'cart']);

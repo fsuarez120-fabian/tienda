@@ -1,0 +1,4 @@
+* Se quito el route que aperece en la base de datos para pantalonestas, bodys sisa, manga larga:
+    - bodylargas
+    - bodysisas
+    - pantaloneta
