@@ -1,4 +1,4 @@
-<section style="" id="hero" class="d-flex align-items-center">
+<section style="background: linear-gradient( rgba(114, 114, 114, 0.158), rgba(112, 112, 112, 0.11)), url('../../../public/img/covers/hawui.jpeg') fixed center center;" id="hero" class="d-flex align-items-center">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
