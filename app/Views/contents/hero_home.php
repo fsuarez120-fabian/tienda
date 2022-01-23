@@ -1,25 +1,19 @@
-<section style="background: linear-gradient( rgba(114, 114, 114, 0.158), rgba(112, 112, 112, 0.11)), url('../../../public/img/covers/hawui.jpeg') fixed center center;" id="hero" class="d-flex align-items-center">
+<section style="background: url('../../../public/img/form_dealer/background2.jpg') fixed center center; background-size:cover;" id="hero" class="d-flex align-items-center">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-center">
-                    <img src="<?= base_url('/public/pictures/peradk/creo_en_mi_me_lo_merezco.png') ?>" class="img-fluid animated" alt="">
+                    <img src="<?= base_url('/public/pictures/peradk/creo_en_mi_me_lo_merezco_blaco.png') ?>" class="img-fluid animated" alt="">
                     <!-- <h2 style="margin-bottom: 1rem; font-size: 20px; color: #fff;">G&aacute;nate una hermosa P E R A Moto, para que puedas llevar felicidad a cada uno de los hogares colombianos &#127824;&#128156;</h2> -->
                 </div>
-                <br>
-                <br>
-                <br> <br>
-                <br>
-                <br> 
-                <br>
-                <br>
+                
                 <div class="row">
                     <div class="col-md-12">
                         <br><br>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="text-center">
-                                    <a style="background-color: black;" href="#about" class="btn-get-started scrollto">NUEVA COLECCION</a>
+                                    <a href="<?=base_url().route_to('view_list_products_family')?>" class="btn-get-started scrollto">NUEVA COLECCION</a>
                                 </div>
                             </div>
                             <div class="col-md-12">

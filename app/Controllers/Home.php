@@ -11,18 +11,18 @@ class Home extends BaseController
 
 	public function index()
 	{
-		if($this->request->getGet('enabelmodal')){
-			$enabelmodal= $this->request->getGet('enabelmodal');
-		}else{
-			$enabelmodal=0;
+		if ($this->request->getGet('enabelmodal')) {
+			$enabelmodal = $this->request->getGet('enabelmodal');
+		} else {
+			$enabelmodal = 0;
 		}
 
 		$data = array(
 			'enabelmodal' => $enabelmodal
 		);
 		return view('structure/header')
-			. view('structure/navbarcontent')
-			. view('contents/home',$data)
+			. view('structure/navbar')
+			. view('contents/home', $data)
 			. view('structure/footer');
 	}
 
@@ -137,7 +137,7 @@ class Home extends BaseController
 		$key_sign = md5("$ApiKey~$merchant_id~$reference_sale~$New_value~$currency~$state_pol");
 		//_________________________________________________________________________________
 
-	$dataTransaction = array(
+		$dataTransaction = array(
 			'idtransaction' => $transaction_id, //$transaction_id,
 			'reference_sale' => $reference_sale,
 			'state_pol' => $state_pol,
@@ -187,7 +187,4 @@ class Home extends BaseController
 			return true;
 		}
 	}
-
-
-
 }
