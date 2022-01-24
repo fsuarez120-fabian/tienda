@@ -1,199 +1,212 @@
-[class*="sidebar-dark-"] {
-  background-color: #343434;
-  background: linear-gradient(rgba(48, 48, 48, 0.788), rgba(49, 49, 49, 0.822)),
-    url(../../../../public/pictures/peradk/pera.png) fixed center center;
-}
-
-.list-group-item.active {
-  background-color: #76b119;
-  border-color: #76b119;
-}
-
-.btn-primary {
-  background-color: #76b119;
-  border-color: #76b119;
-}
-
-.backgroudlogin {
-  height: 100vh;
-  background: linear-gradient(
-      rgba(114, 114, 114, 0.9),
-      rgba(112, 112, 112, 0.9)
-    ),
-    url(../../../../public/pictures/peradk/pera.png) fixed center center;
-}
-
-.backgroudlogin h3,
-label {
-  font-family: "Patrick Hand", cursive;
-  color: #ffffff;
-}
-
-label {
-  color: #000000;
-}
-
-.backgroudlogin p {
-  font-family: "Patrick Hand", cursive;
-  color: rgb(252, 65, 65);
-}
-
-.caja-login {
-  position: absolute;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 300px;
-  padding: 15px;
-  box-shadow: 0 0 3px rgb(0 0 0 / 70%);
-  border-radius: 0 0 2px 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.list-group-item {
-  padding: 0.4rem 0.9rem;
-}
-
-.prodimg {
-  width: 80px;
-  border-radius: 40%;
-}
-
-.action-product {
-  font-size: 30px;
-
-  padding: 5px;
-}
-
-.icon-red {
-  color: #ff1e00;
-}
-
-.icon-green {
-  color: #76b119;
-}
-
-.alert-success {
-  color: #fff;
-  background-color: #76b119;
-  border-color: #76b119;
-}
-
-.section-title h2 {
-  text-align: center;
-  font-family: "Patrick Hand", cursive;
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #76b119;
-}
-
-.team .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
-  padding: 15px;
-  border-radius: 5px;
-  background: #fff;
-  transition: 0.5s;
-  margin-bottom: 15px;
-}
-
-.team .member .pic {
-  overflow: hidden;
-  width: 130px;
-  border-radius: 20%;
-}
-
-.team .member p {
-  margin: 0px 0 0 0;
-  font-size: 14px;
-}
-
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #37517e;
-}
-
-.team .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #76b119;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.team .info {
-  border-top: 3px solid #76b119;
-  border-bottom: 3px solid #76b119;
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
-}
-
-.team .delete button[type="submit"] {
-  background: #ffffff00;
-  border: 0;
-  padding: 0px 0px;
-  color: rgb(3, 3, 3);
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-button[type="submit"] {
-  background: #76b119;
-  border: 0;
-  padding: 12px 34px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.icon button[type="submit"] {
-  background: transparent;
-  border: 0;
-  font-size: 30px;
-  padding: 0 0 0 0;
-  color: #76b119;
-  border-radius: 50px;
-}
-
-.input-group-append button[type="submit"] {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0.2rem;
-}
-
-a {
-  color: #76b119;
-}
-a:hover {
-  color: #06b300;
-}
-.letra {
-  font-size: 20px;
-  color: #fff;
-}
-.bg-info {
-  background-color: #76b119 !important;
-}
+:root {
+    --white-color-corporative: #fff;
+    --black-color-corporative: #000;
+    --primary-color-corporative: #D290F4;
+    --second-color-corporative: #B46ee5;
+    --third-color-corporative: #b46ee5;
+    --fifth-color-corporative: #deacfc;
+    --light-color-corporative: #d390f442;
+    /* --font-primary: "Neon Absolute"; */
+    --font-primary: "aguacate";
+    --font-secundary: "Bebas";
+    /* --font-third: "lcour"; */
+    --font-third: "Bebas";
+}
+
+[class*="sidebar-dark-"] {
+    background-color: #343434;
+    background: linear-gradient(rgba(48, 48, 48, 0.788), rgba(49, 49, 49, 0.822)), url(../../../../public/pictures/peradk/pera.png) fixed center center;
+}
+
+.list-group-item.active {
+    background-color: #76b119;
+    border-color: #76b119;
+}
+
+.btn-primary {
+    background-color: var(--black-color-corporative);
+    border-color: var(--primary-color-corporative);
+}
+
+.backgroudlogin {
+    height: 100vh;
+    background: url(../../../../public/pictures/peradk/new_background.png);
+}
+
+.backgroudlogin h3,
+label {
+    font-family: "Patrick Hand", cursive;
+    color: #ffffff;
+}
+
+label {
+    color: #000000;
+}
+
+.backgroudlogin p {
+    font-family: "Patrick Hand", cursive;
+    color: rgb(252, 65, 65);
+}
+
+.caja-login {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 300px;
+    padding: 25px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 70%);
+    border-radius: 10px;
+    background-color: var(--primary-color-corporative);
+}
+
+.list-group-item {
+    padding: 0.4rem 0.9rem;
+}
+
+.prodimg {
+    width: 80px;
+    border-radius: 40%;
+}
+
+.action-product {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.icon-red {
+    color: #ff1e00;
+}
+
+.icon-green {
+    color: #76b119;
+}
+
+.alert-success {
+    color: #fff;
+    background-color: #76b119;
+    border-color: #76b119;
+}
+
+.section-title h2 {
+    text-align: center;
+    font-family: "Patrick Hand", cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #76b119;
+}
+
+.team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.team .member .pic {
+    overflow: hidden;
+    width: 130px;
+    border-radius: 20%;
+}
+
+.team .member p {
+    margin: 0px 0 0 0;
+    font-size: 14px;
+}
+
+.team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+}
+
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #76b119;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.team .info {
+    border-top: 3px solid #76b119;
+    border-bottom: 3px solid #76b119;
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+}
+
+.team .delete button[type="submit"] {
+    background: #ffffff00;
+    border: 0;
+    padding: 0px 0px;
+    color: rgb(3, 3, 3);
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+button[type="submit"] {
+    background: var(--black-color-corporative);
+    border: 0;
+    padding: 12px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.icon button[type="submit"] {
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    padding: 0 0 0 0;
+    color: #76b119;
+    border-radius: 50px;
+}
+
+.input-group-append button[type="submit"] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+a {
+    color: #76b119;
+}
+
+a:hover {
+    color: #06b300;
+}
+
+.letra {
+    font-size: 20px;
+    color: #fff;
+}
+
+.bg-info {
+    background-color: #76b119 !important;
+}

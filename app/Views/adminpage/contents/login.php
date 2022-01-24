@@ -19,8 +19,7 @@
                     <input type="text" class="form-control" name="user" value="<?= old('user') ?>" />
                     <p class="is-danger"><?= session('errors.user') ?></p>
                 </div>
-                <div class="form-group">
-
+                <div class="form-group"> 
                     <label for="exampleInputPassword1">
                         Contraseña:
                     </label>
