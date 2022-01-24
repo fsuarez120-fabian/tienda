@@ -99,6 +99,9 @@
                                 <th>
                                     Referencia
                                 </th>
+                                <th>
+                                    Orden PaginaWeb
+                                </th>
                                 <th style="width: 200px;">
                                     Nombre
                                 </th>
@@ -108,49 +111,43 @@
                                 <th>
                                     Activo
                                 </th>
-
                                 <th>
                                     Acci&oacute;n
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
-
                             <?php foreach ($products as $product) {
-                                //d($product); ?>
+                                //d($product); 
+                            ?>
                                 <form action="<?= base_url() . route_to('admin_page_update_item_products') ?>" method="post">
                                     <tr>
-
                                         <td>
                                             <img src="<?= base_url() . route_to('images_products_miniaturas') . '/' . $product['image_product'] ?>" alt="ne" class="img-fluid prodimg">
                                         </td>
                                         <td>
-                                        <input type="hidden" name="reference" value="<?= $product['reference'] ?>">
+                                            <input type="hidden" name="reference" value="<?= $product['reference'] ?>">
                                             <?= $product['reference'] ?>
                                         </td>
+                                        <td><?= $product['score_product'] ?></td>
                                         <td>
                                             <input name="nameproduct" type="text" class="form-control" value="<?= $product['name_product'] ?>" />
                                         </td>
                                         <td>
-                                        <input type="hidden" name="idcategory" value="<?= $product['category_idcategory'] ?>">
+                                            <input type="hidden" name="idcategory" value="<?= $product['category_idcategory'] ?>">
                                             <?= $product['category_idcategory'] ?>
                                         </td>
                                         <td>
-
                                             <input name="activeproduct" type="text" class="form-control" value="<?= $product['active_product'] ?>" />
-
                                         </td>
                                         <td>
                                             <button type="submit" style="border-color: transparent; background: transparent;">
                                                 <i class="far fa-save action-product icon-green"></i>
                                             </button>
                                         </td>
-
                                     </tr>
                                 </form>
-
                             <?php } ?>
-
                         </tbody>
                     </table>
                 </div>
