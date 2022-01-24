@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>/public/assets/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>/public/assets/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/assets/dist/css/adminpage1.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/assets/dist/css/adminpage2.css">
     <link href="<?= base_url() ?>/public/assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="<?= base_url() ?>/public/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
 </head>

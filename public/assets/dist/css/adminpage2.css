@@ -35,7 +35,6 @@
 
 .backgroudlogin h3,
 label {
-    font-family: "Patrick Hand", cursive;
     color: #ffffff;
 }
 
@@ -44,7 +43,6 @@ label {
 }
 
 .backgroudlogin p {
-    font-family: "Patrick Hand", cursive;
     color: rgb(252, 65, 65);
 }
 
@@ -92,7 +90,6 @@ label {
 
 .section-title h2 {
     text-align: center;
-    font-family: "Patrick Hand", cursive;
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
