@@ -15,7 +15,7 @@
                         <div class="info">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <label for="id_category"><b>Seleccione el porducto que quieres</b></label>
+                                    <label for="id_category"><b>Seleccione el producto que quieres</b></label>
                                     <select id="select_products_family" name="id_category" class="form-control" required>
                                         <option value="">Producto *</option>
                                         <?php foreach ($products as $products) : ?>
