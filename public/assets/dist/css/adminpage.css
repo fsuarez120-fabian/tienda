@@ -15,12 +15,12 @@
 
 [class*="sidebar-dark-"] {
     background-color: #343434;
-    background: linear-gradient(rgba(48, 48, 48, 0.788), rgba(49, 49, 49, 0.822)), url(../../../../public/pictures/peradk/pera.png) fixed center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.911)), url(../../../../public/pictures/peradk/logo_morado.png) fixed center center;
 }
 
 .list-group-item.active {
-    background-color: #76b119;
-    border-color: #76b119;
+    background-color: var(--primary-color-corporative);
+    border-color: var(--primary-color-corporative);
 }
 
 .btn-primary {
@@ -81,13 +81,13 @@ label {
 }
 
 .icon-green {
-    color: #76b119;
+    color: var(--primary-color-corporative);
 }
 
 .alert-success {
     color: #fff;
-    background-color: #76b119;
-    border-color: #76b119;
+    background-color: var(--primary-color-corporative);
+    border-color: var(--primary-color-corporative);
 }
 
 .section-title h2 {
@@ -99,7 +99,7 @@ label {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #76b119;
+    color: var(--primary-color-corporative);
 }
 
 .team .member {
@@ -144,14 +144,14 @@ label {
     display: block;
     width: 40px;
     height: 3px;
-    background: #76b119;
+    background: var(--primary-color-corporative);
     bottom: 0;
     left: calc(50% - 20px);
 }
 
 .team .info {
-    border-top: 3px solid #76b119;
-    border-bottom: 3px solid #76b119;
+    border-top: 3px solid var(--primary-color-corporative);
+    border-bottom: 3px solid var(--primary-color-corporative);
     padding: 30px;
     background: #fff;
     width: 100%;
@@ -181,7 +181,7 @@ button[type="submit"] {
     border: 0;
     font-size: 30px;
     padding: 0 0 0 0;
-    color: #76b119;
+    color: var(--primary-color-corporative);
     border-radius: 50px;
 }
 
@@ -195,11 +195,11 @@ button[type="submit"] {
 }
 
 a {
-    color: #76b119;
+    color: var(--primary-color-corporative);
 }
 
 a:hover {
-    color: #06b300;
+    color: var(--primary-color-corporative);
 }
 
 .letra {
@@ -208,5 +208,5 @@ a:hover {
 }
 
 .bg-info {
-    background-color: #76b119 !important;
+    background-color: var(--primary-color-corporative) !important;
 }
