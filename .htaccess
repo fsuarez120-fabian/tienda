@@ -4,7 +4,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L,QSA] 
 
-
 # php -- BEGIN cPanel-generated handler, do not edit
 # Establecer el paquete “ea-php73” como el lenguaje de programación “PHP” predeterminado.
 <IfModule mime_module>
@@ -16,3 +15,12 @@ RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 <FilesMatch ".(eot|ttf|otf|woff)">
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
+RewriteCond %{HTTP_HOST} ^tienda\.peradk\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tienda\.peradk\.com$
+RewriteRule ^/?$ "https\:\/\/peracolombia\.com\/" [R=301,L]
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"

@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'https://www.tienda.peradk.com/';
+	public $baseURL = 'https://peracolombia.com/';
 
 	/*
 	|--------------------------------------------------------------------------
