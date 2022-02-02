@@ -86,10 +86,10 @@ $routes->get('/shirtsizes', 'Size::getSizes');
 
 
 //routes of pictures
-$routes->add('/public/pictures/productos/', '', ['as' => 'images_products']);
-$routes->add('/public/pictures/miniatures/', '', ['as' => 'images_products_miniaturas']);
-$routes->add('/public/pictures/peradk/', '', ['as' => 'images_peradk']);
-$routes->add('/public/pictures/employees/', '', ['as' => 'images_employees']);
+$routes->add('/pictures/productos/', '', ['as' => 'images_products']);
+$routes->add('/pictures/miniatures/', '', ['as' => 'images_products_miniaturas']);
+$routes->add('/pictures/peradk/', '', ['as' => 'images_peradk']);
+$routes->add('/pictures/employees/', '', ['as' => 'images_employees']);
 
 //routes of politics
 $routes->get('/terminosycondiones', 'Home::termandcoditions', ['as' => 'term_conditiones']);

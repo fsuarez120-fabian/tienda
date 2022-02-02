@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
         <h1 class="logo mr-auto">
             <a href="<?php echo base_url() ?> ">
-                <img src="<?php echo base_url() ?>/public/pictures/peradk/logo4.png" alt="" class="img-fluid">
+                <img src="<?php echo base_url() ?>/pictures/peradk/logo4.png" alt="" class="img-fluid">
             </a>
         </h1>
         <nav class="nav-menu d-none d-lg-block">
@@ -43,7 +43,7 @@
             </ul>
         </nav><!-- .nav-menu -->
         <a href="<?= base_url() . route_to('cart') ?>" class="get-started-btn scrollto">
-            <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/icon_cart.png" alt="" class="img-fluid">
+            <img style="max-height: 3rem;" src="<?= base_url() ?>/pictures/peradk/icon_cart.png" alt="" class="img-fluid">
             <?php if (isset($_SESSION['shoppingcart'])) {
                 echo '(' . count($_SESSION['shoppingcart']) . ')';
             } ?>

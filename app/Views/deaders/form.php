@@ -16,24 +16,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url() ?>/public/favicon.ico">
-    <link rel="icon" type="image/png" href="<?= base_url() ?>/public/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url() ?>/favicon.ico">
+    <link rel="icon" type="image/png" href="<?= base_url() ?>/favicon.ico">
     <title>
         Distribuidores PERA
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="<?= base_url() ?>/public/assets-materials-kit/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="<?= base_url() ?>/public/assets-materials-kit/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/assets-materials-kit/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/assets-materials-kit/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
-    <link id="pagestyle" href="<?= base_url() ?>/public/assets-materials-kit/css/material-kit.css?v=3.0.0" rel="stylesheet" />
+    <link id="pagestyle" href="<?= base_url() ?>/assets-materials-kit/css/material-kit.css?v=3.0.0" rel="stylesheet" />
     <!-- fabian CSS -->
-    <link href="<?= base_url() ?>/public/assets-materials-kit/css/fabian1.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/assets-materials-kit/css/fabian1.css" rel="stylesheet" />
 </head>
 
 <body class="about-us bg-gray-200">
@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
         <div class="container">
             <a class="navbar-brand  text-white " href="<?= base_url() . route_to('form_dealer') ?>" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
-                <img style="max-height: 3rem;" src="<?= base_url() ?>/public/pictures/peradk/logo4.png" alt="" class="img-fluid">
+                <img style="max-height: 3rem;" src="<?= base_url() ?>/pictures/peradk/logo4.png" alt="" class="img-fluid">
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mt-2">
@@ -62,7 +62,7 @@
     <!-- End Navbar -->
     <!-- -------- START HEADER 7 w/ text and video ------- -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75" style="background-image: url('<?= base_url() ?>/public/img/form_dealer/background2.jpg');">
+        <div class="page-header min-vh-75" style="background-image: url('<?= base_url() ?>/img/form_dealer/background2.jpg');">
             <span class="mask "></span>
             <div class="container">
                 <div class="row justify-content-center">
@@ -193,7 +193,7 @@
                                         <div class="col-lg-4 col-md-6 col-6 mt-n5">
                                             <a href="javascript:;">
                                                 <div class="p-3 pe-md-0">
-                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest1.jpeg" alt="image">
+                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/img/form_dealer/quest1.jpeg" alt="image">
                                                 </div>
                                             </a>
                                         </div>
@@ -229,7 +229,7 @@
                                         <div class="col-lg-4 col-md-6 col-6 mt-n5">
                                             <a href="javascript:;">
                                                 <div class="p-3 pe-md-0">
-                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest2.jpeg" alt="image">
+                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/img/form_dealer/quest2.jpeg" alt="image">
                                                 </div>
                                             </a>
                                         </div>
@@ -257,7 +257,7 @@
                                         <div class="col-lg-4 col-md-6 col-6 mt-n5">
                                             <a href="javascript:;">
                                                 <div class="p-3 pe-md-0">
-                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest3.jpeg" alt="image">
+                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/img/form_dealer/quest3.jpeg" alt="image">
                                                 </div>
                                             </a>
                                         </div>
@@ -289,7 +289,7 @@
                                         <div class="col-lg-4 col-md-6 col-6 mt-n5">
                                             <a href="javascript:;">
                                                 <div class="p-3 pe-md-0">
-                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/public/img/form_dealer/quest4.jpeg" alt="image">
+                                                    <img class="w-100 border-radius-md shadow-lg" src="<?= base_url() ?>/img/form_dealer/quest4.jpeg" alt="image">
                                                 </div>
                                             </a>
                                         </div>
@@ -376,7 +376,7 @@
                                 <div class="form-check mt-5">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Si, acepto la <a style="color: #D290F4;" href="https://peradk.com/public/archivos/tratamiento_de_datos.pdf">politica de privacidad</a> de PeRa DK SAS.
+                                        Si, acepto la <a style="color: #D290F4;" href="https://peradk.com/archivos/tratamiento_de_datos.pdf">politica de privacidad</a> de PeRa DK SAS.
                                     </label>
                                 </div>
                             </div>
@@ -396,7 +396,7 @@
             <div class="container mb-4">
                 <div class="row justify-content-center ">
                     <div class="col-lg-4">
-                        <img src="<?= base_url() ?>/public/pictures/peradk/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
+                        <img src="<?= base_url() ?>/pictures/peradk/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -406,24 +406,24 @@
         <div class="container mb-6">
             <div class="row justify-content-center ">
                 <div class="col-lg-4">
-                    <img src="<?= base_url() ?>/public/pictures/peradk/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
+                    <img src="<?= base_url() ?>/pictures/peradk/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
     <?php endif; ?>
 
     <!--   Core JS Files   -->
-    <script src="<?= base_url() ?>/public/assets-materials-kit/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="<?= base_url() ?>/public/assets-materials-kit/js/core/bootstrap.min.js" type="text/javascript"></script>
-    <script src="<?= base_url() ?>/public/assets-materials-kit/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="<?= base_url() ?>/assets-materials-kit/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="<?= base_url() ?>/assets-materials-kit/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?= base_url() ?>/assets-materials-kit/js/plugins/perfect-scrollbar.min.js"></script>
     <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
-    <script src="<?= base_url() ?>/public/assets-materials-kit/js/plugins/countup.min.js"></script>
+    <script src="<?= base_url() ?>/assets-materials-kit/js/plugins/countup.min.js"></script>
     <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
-    <script src="<?= base_url() ?>/public/assets-materials-kit/js/plugins/parallax.min.js"></script>
+    <script src="<?= base_url() ?>/assets-materials-kit/js/plugins/parallax.min.js"></script>
     <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
     <!--  Google Maps Plugin    -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-    <script src="<?= base_url() ?>/public/assets-materials-kit/js/material-kit.min.js?v=3.0.0" type="text/javascript"></script>
+    <script src="<?= base_url() ?>/assets-materials-kit/js/material-kit.min.js?v=3.0.0" type="text/javascript"></script>
     <script>
         // get the element to animate
         var element = document.getElementById('count-stats');
@@ -507,7 +507,7 @@
             }, 6);
         }
     </script>
-    <script src="<?php echo base_url() ?>/public/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>/assets/vendor/jquery/jquery.min.js"></script>
     <!----SCRIPT PARA CARGAR LAS CIUDADES ------>
     <script>
         $(document).ready(function() {

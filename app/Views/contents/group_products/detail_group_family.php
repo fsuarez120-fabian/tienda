@@ -51,7 +51,7 @@
                                                 foreach ($sizes1 as $size) {
                                                     echo  '<option value="' . $size['size_idsize'] . '">' . $size['size_idsize'] . '</option>';
                                                 }
-                                                echo ' </select><p class="form-text text-muted"><b>PeRa amiguis pide la talla que más utilizas en camiseta nacional <img src="https://localhost/tienda/public/pictures/peradk/colombia.svg" alt="" style="width: 20px;">. Recuerda que lo puedes usar como prenda casual o traje de baño. <br>Nota: </b>los PeRa Bodys por ser prenda intima de uso personal, no tienen cambio.</p>';
+                                                echo ' </select><p class="form-text text-muted"><b>PeRa amiguis pide la talla que más utilizas en camiseta nacional <img src="https://localhost/tienda/pictures/peradk/colombia.svg" alt="" style="width: 20px;">. Recuerda que lo puedes usar como prenda casual o traje de baño. <br>Nota: </b>los PeRa Bodys por ser prenda intima de uso personal, no tienen cambio.</p>';
                                             }
                                             ?>
                                             <p class="text-danger"> <?= session('validate.sizeproduct1') ?></p>
@@ -109,7 +109,7 @@
                                                     echo  '<option value="' . $size['size_idsize'] . '">' . $size['size_idsize'] . '</option>';
                                                 }
                                                 echo ' </select><p class="form-text text-muted">
-                                                <b>Pide la talla que más utilices en Jeans Nacional <img src="' . base_url() . '/public/pictures/peradk/colombia.svg" alt="" style="width: 20px;">.</b></p>
+                                                <b>Pide la talla que más utilices en Jeans Nacional <img src="' . base_url() . '/pictures/peradk/colombia.svg" alt="" style="width: 20px;">.</b></p>
                                                 ';
                                             }
                                             ?>

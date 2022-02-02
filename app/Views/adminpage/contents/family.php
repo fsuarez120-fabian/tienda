@@ -99,7 +99,7 @@
                                     <tr>
 
                                         <td>
-                                            <img src="<?= base_url('public/pictures/group_products/thumbnails')  . '/' . $product['image_reference_group'] ?>" alt="ne" class="img-fluid prodimg">
+                                            <img src="<?= base_url('pictures/group_products/thumbnails')  . '/' . $product['image_reference_group'] ?>" alt="ne" class="img-fluid prodimg">
                                         </td>
                                         <td>
 

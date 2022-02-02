@@ -13,7 +13,7 @@
                     <div class="member align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                         <div class="text-center">
                             <a href="<?= base_url() . route_to('detail_family', $product['id_reference_group']) ?>">
-                                <img src="<?= base_url('public/pictures/group_products/thumbnails') . '/' . $product['image_reference_group'] ?>" class="img-fluid">
+                                <img src="<?= base_url('pictures/group_products/thumbnails') . '/' . $product['image_reference_group'] ?>" class="img-fluid">
                                 <p>Ref: <?= $product['id_reference_group']; ?></p>
                             </a>
                         </div>

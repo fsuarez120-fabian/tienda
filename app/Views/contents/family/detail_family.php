@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="info">
-                            <img src="<?= base_url('public/pictures/group_products/thumbnails') . '/' . $ref_family['image_reference_group'] ?>" class="img-fluid">
+                            <img src="<?= base_url('pictures/group_products/thumbnails') . '/' . $ref_family['image_reference_group'] ?>" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-md-8">

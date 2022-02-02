@@ -95,7 +95,7 @@
                     <div class="text-center">
                         <br>
                         <b>PeRa Amiguis para tu comodidad tu envi&oacute; ser&aacute; realizado por </b>
-                        <img src="<?php echo base_url('public/pictures/peradk'); ?>/servientrega.png" alt="" class="img-fluid col-6">
+                        <img src="<?php echo base_url('pictures/peradk'); ?>/servientrega.png" alt="" class="img-fluid col-6">
 
                         <p><br>Trayecto nacional o zonal, tiempo de entrega de 2 a 3 días h&aacute;biles </p>
                         <p>Trayecto especial, tiempo de entrega 4 a 5 d&iacute;as h&aacute;biles</p>
@@ -151,7 +151,7 @@
                         <div class="row">
                             <div class="col-lg-3"></div>
                             <div class="col-lg-6">
-                                <img src="<?= base_url('public/pictures/peradk') ?>/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
+                                <img src="<?= base_url('pictures/peradk') ?>/creo_en_mi_me_lo_merezco.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-lg-3"></div>
                         </div>
