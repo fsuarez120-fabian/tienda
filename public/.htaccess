@@ -15,10 +15,6 @@ RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 <FilesMatch ".(eot|ttf|otf|woff)">
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
-RewriteCond %{HTTP_HOST} ^tienda\.peradk\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.tienda\.peradk\.com$
-RewriteRule ^/?$ "https\:\/\/peracolombia\.com\/" [R=301,L]
-
 
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
