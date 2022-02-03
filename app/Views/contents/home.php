@@ -212,7 +212,7 @@
     </section><!-- End Tiendas Section -->
 
     <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
+    <section style=" background: linear-gradient( rgba(114, 114, 114, 0), rgba(112, 112, 112, 0)), url(<?= base_url() ?>/pictures/peradk/new_background.png)" id="cta" class="cta">
         <div class="container" data-aos="zoom-in">
             <div class="row">
                 <div class="col-lg-9 text-center text-lg-left">
