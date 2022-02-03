@@ -6,27 +6,27 @@
 
 @font-face {
     font-family: "Neon Absolute";
-    src: url("../../../public/assets/font/pera-NEON_ABSOLUTE_SANS1.ttf") format("truetype");
+    src: url("../../assets/font/pera-NEON_ABSOLUTE_SANS1.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Bebas";
-    src: url("../../../public/assets/font/pera-BebasNeue-Regular.ttf") format("truetype");
+    src: url("../../assets/font/pera-BebasNeue-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "lcour";
-    src: url("../../../public/assets/font/pera-lcour.ttf") format("truetype");
+    src: url("../../assets/font/pera-lcour.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "aguacate";
-    src: url("../../../public/assets/font/AguacateByKathe-Regular.ttf") format("truetype");
+    src: url("../../assets/font/AguacateByKathe-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "aguacate Secundary";
-    src: url("../../../public/assets/font/agucatebykathe-agency_fb.ttf") format("truetype");
+    src: url("../../assets/font/agucatebykathe-agency_fb.ttf") format("truetype");
 }
 
 
