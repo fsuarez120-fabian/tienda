@@ -15,7 +15,7 @@
 
 [class*="sidebar-dark-"] {
     background-color: #343434;
-    background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.911)), url(../../../../public/pictures/peradk/logo_morado.png) fixed center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.911)), url(../../pictures/peradk/logo_morado.png) fixed center center;
 }
 
 .list-group-item.active {
@@ -30,7 +30,7 @@
 
 .backgroudlogin {
     height: 100vh;
-    background: url(../../../../public/pictures/peradk/new_background.png);
+    background: url(../../../pictures/peradk/new_background.png);
 }
 
 .backgroudlogin h3,
