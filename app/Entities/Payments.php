@@ -14,8 +14,8 @@ class Payments extends Entity
     private $DESCRIPTION = "Productos PeRa DK";
     private $CURRENCY = 'COP';
     private $TEST = 0;
-    private $RESPONSE_URL = 'https://www.tienda.peradk.com/requestpayment';
-    private $CONFIRMATION_URL = 'https://www.tienda.peradk.com/confirmationpage';
+    private $RESPONSE_URL = 'https://peracolombia.com/requestpayment';
+    private $CONFIRMATION_URL = 'https://peracolombia.com/confirmationpage';
     
  
     public function getUrl()
