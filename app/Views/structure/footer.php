@@ -33,7 +33,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12 footer-contact">
-                    <h3>PeRa DK SAS</h3>
+                    <h3>PeRa Colombia</h3>
                     <p2>
                         Calle 5 # 4-31 Barrio Centro <br>
                         Pamplona, Norte de Santander<br>

@@ -187,7 +187,7 @@
                         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                             <div class="icon-box">
                                 <a href="https://api.whatsapp.com/send?phone=573232534285" target="”_blank”">
-                                    <img src="<?php echo base_url() ?>/pictures/peradk/tiendamedellin5.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/pictures/peradk/tiendamedellin6.jpeg" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
