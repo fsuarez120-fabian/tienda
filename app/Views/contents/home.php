@@ -180,14 +180,14 @@
                         <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                             <div class="icon-box text-center">
                                 <a href="https://api.whatsapp.com/send?phone=573134848876" target="”_blank”">
-                                    <img src="<?php echo base_url() ?>/pictures/peradk/tiendapamplona5.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/pictures/peradk/tiendapamplona6.jpeg" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                             <div class="icon-box">
                                 <a href="https://api.whatsapp.com/send?phone=573232534285" target="”_blank”">
-                                    <img src="<?php echo base_url() ?>/pictures/peradk/tiendamedellin6.jpeg" alt="" class="img-fluid">
+                                    <img src="<?php echo base_url() ?>/pictures/peradk/tiendamedellin7.jpeg" alt="" class="img-fluid">
                                 </a>
                             </div>
                         </div>
