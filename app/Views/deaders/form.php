@@ -33,7 +33,7 @@
     <!-- CSS Files -->
     <link id="pagestyle" href="<?= base_url() ?>/assets-materials-kit/css/material-kit.css?v=3.0.0" rel="stylesheet" />
     <!-- fabian CSS -->
-    <link href="<?= base_url() ?>/assets-materials-kit/css/fabian1.css" rel="stylesheet" />
+    <link href="<?= base_url() ?>/assets-materials-kit/css/fabian2.css" rel="stylesheet" />
 </head>
 
 <body class="about-us bg-gray-200">
