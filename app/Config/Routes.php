@@ -106,8 +106,8 @@ $routes->post('/sorteomoto', 'Sorteo::registerSorteo', ['as' => 'form_sorteo']);
 $routes->get('/d', 'Product::destroy');
 
 //route of form dealer
-/* $routes->get('/distribuidor', 'Dealer::form', ['as' => 'form_dealer']);
-$routes->post('/distribuidor', 'Dealer::validateForm', ['as' => 'send_data_form']); */
+$routes->get('/distribuidor', 'Dealer::form', ['as' => 'form_dealer']);
+$routes->post('/distribuidor', 'Dealer::validateForm', ['as' => 'send_data_form']);
 $routes->post('/cities_by', 'City::getHtmlCities', ['as' => 'ajax_get_cities']);
 
 
